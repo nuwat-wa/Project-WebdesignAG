@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    background-color: #f5faf6;
+    color: #344454;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 3%;
+    height: 65px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #dcfce7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #064e3b;
+    line-height: 0.95;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #059669;
+    line-height: 1.1;
+    margin-top: 2px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    margin-left: 24px;
+}
+
+.nav-links a:hover {
+    color: #059669;
+}
+
+nav a:hover,
+nav .active {
+    color: #196738;
+    border-bottom: 2px solid #196738;
+}
+
+
+/* เนื้อหาหลัก */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 25px 0;
+}
+
+h1 {
+    color: #205a3b;
+    font-size: 34px;
+}
+
+
+/* ขั้นตอน */
+
+.steps {
+    display: flex;
+    margin: 55px 0;
+}
+
+.step {
+    width: 25%;
+    text-align: center;
+}
+
+.step span {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    border: 2px solid #ccd9e5;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bold;
+}
+
+.step p {
+    font-size: 14px;
+}
+
+.current span {
+    background-color: #196738;
+    border-color: #196738;
+    color: white;
+}
+
+.current p {
+    color: #196738;
+    font-weight: bold;
+}
+
+
+/* การ์ดปุ๋ย */
+
+.cards {
+    display: flex;
+    gap: 30px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dce5eb;
+    border-radius: 18px;
+}
+
+.organic {
+    background-color: #effcf4;
+    border-color: #7bd6a5;
+}
+
+.icon {
+    font-size: 38px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    color: #205a3b;
+    font-size: 25px;
+}
+
+.card p {
+    margin: 0 0 25px;
+    font-size: 15px;
+}
+
+.button {
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 8px 30px;
+    background-color: #196738;
+    color: white;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: #104b29;
+}
+
+.field {
+    height: 180px;
+    margin-top: 30px;
+    background-color: #dcefdc;
+    background-image: url("field.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* พื้นหลังและตัวอักษร */
+
+.site-footer {
+    padding: 50px 4% 25px;
+    background-color: #193f31;
+    color: #a4bdb0;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.site-footer * {
+    box-sizing: border-box;
+}
+
+.site-footer a {
+    color: #a4bdb0;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #65dfb0;
+}
+
+.site-footer a:focus-visible {
+    outline: 2px solid #65dfb0;
+    outline-offset: 4px;
+}
+
+
+/* จัดเนื้อหา 4 คอลัมน์ */
+
+.site-footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.site-footer .footer-about {
+    flex: 1.6;
+    min-width: 0;
+}
+
+.site-footer .footer-column {
+    flex: 0.9;
+    min-width: 0;
+}
+
+.site-footer .footer-contact {
+    flex: 1.2;
+    min-width: 0;
+}
+
+
+/* โลโก้ */
+
+.site-footer .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.site-footer .footer-logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #245b42;
+    font-size: 20px;
+}
+
+.site-footer .footer-logo strong {
+    display: block;
+    color: #bdd0c5;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.site-footer .footer-logo small {
+    display: block;
+    color: #50c998;
+    font-size: 11px;
+}
+
+
+/* หัวข้อและจุดสีเขียว */
+
+.site-footer h3 {
+    margin: 0 0 18px;
+    color: white;
+    font-size: 16px;
+}
+
+.site-footer h3::before {
+    content: "•";
+    margin-right: 8px;
+    color: #3bd4a0;
+}
+
+
+/* ข้อความและรายการลิงก์ */
+
+.site-footer p {
+    margin: 0;
+}
+
+.site-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-footer li {
+    margin-bottom: 8px;
+}
+
+
+/* ปุ่มช่องทางติดต่อ */
+
+.site-footer .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.site-footer .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #224b3b;
+    color: #6ce4b6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-footer .footer-social a:hover {
+    background-color: #30634e;
+}
+
+.site-footer .footer-social .social-line {
+    font-size: 9px;
+}
+
+
+/* เส้นคั่นและข้อมูลด้านล่าง */
+
+.site-footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid #2b5140;
+    font-size: 12px;
+}
+
+.site-footer .footer-policy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* แท็บเล็ต: แสดงสองคอลัมน์ */
+
+@media (max-width: 900px) {
+    .site-footer .footer-top {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .site-footer .footer-about,
+    .site-footer .footer-column,
+    .site-footer .footer-contact {
+        flex: 1 1 40%;
+    }
+    .site-footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* มือถือ: เรียงลงมาคอลัมน์เดียว */
+
+@media (max-width: 550px) {
+    .site-footer {
+        padding: 35px 20px 20px;
+    }
+    .site-footer .footer-top {
+        flex-direction: column;
+    }
+}
