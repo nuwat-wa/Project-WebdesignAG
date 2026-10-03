@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fbf9;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0 9%;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header .logo{
+    color: #14532D;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #059669;
+    font-weight: 400;
+    fon
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}

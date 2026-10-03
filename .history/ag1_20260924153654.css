@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-decoration: none;
+    color: #14532D;
+    font-weight: 400;
+}
+
+.logo span {
+    color: #059669;
+}

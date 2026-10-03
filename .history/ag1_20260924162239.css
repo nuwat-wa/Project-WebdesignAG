@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fbf9;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0 9%;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #dcfce7; /* สีพื้นหลังเขียวอ่อน */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* หัวข้อใหญ่ - บีบ line-height ให้ชิดพอดีกับตัวอักษร */
+.title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #064e3b; /* เขียวเข้ม */
+  line-height: 0.95; /* บีบระยะบรรทัดด้านล่างให้ชิดข้อความย่อย */
+}
+
+/* ข้อความย่อย */
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #059669; /* เขียวปานกลาง */
+  line-height: 1.1;
+  margin-top: 2px; /* ปรับระยะห่างระหว่าง 2 บรรทัดได้ตามใจชอบ */
+}
+

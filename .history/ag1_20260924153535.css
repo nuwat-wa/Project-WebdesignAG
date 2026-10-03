@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-decoration: none;
+    color: #14532D;
+}
+
+.logo span {
+    color: aqua;
+}

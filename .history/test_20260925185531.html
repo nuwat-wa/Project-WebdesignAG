@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Knowledge - เกษตรไทยยั่งยืน</title>
+
+    <!-- Google Fonts: Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================
+           RESET & GENERAL VARIABLES
+           ========================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary: #16a34a;
+            --primary-dark: #15803d;
+            --primary-light: #dcfce7;
+            --primary-bg: #f0fdf4;
+            --dark-green: #0e3822;
+            --footer-bg: #0b2b1a;
+            --text-main: #333333;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ==========================================
+           HEADER & CSS MOBILE MENU TOGGLE
+           ========================================== */
+        header {
+            background-color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background-color: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            transition: var(--transition);
+        }
+
+        .logo:hover .logo-icon {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            line-height: 1.1;
+        }
+
+        .logo-subtitle {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--primary-dark);
+            letter-spacing: 1px;
+        }
+
+        /* Desktop Nav */
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            font-size: 15px;
+            font-weight: 500;
+            color: #475569;
+            transition: var(--transition);
+            padding: 8px 0;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            background-color: var(--white);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 8px 20px;
+            font-size: 14px;
+            color: #475569;
+            transition: var(--transition);
+        }
+
+        .dropdown-item:hover {
+            background-color: var(--primary-bg);
+            color: var(--primary);
+        }
+
+        /* Mobile Checkbox Hack Menu Button */
+        #menu-toggle {
+            display: none;
+        }
+
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            background: transparent;
+            border: none;
+        }
+
+        .menu-btn svg {
+            width: 26px;
+            height: 26px;
+            fill: #334155;
+        }
+
+        .mobile-nav {
+            display: none;
+            background-color: var(--white);
+            border-top: 1px solid var(--border-color);
+            padding: 16px 20px 24px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .mobile-nav .nav-link {
+            display: block;
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-bottom: 4px;
+        }
+
+        .mobile-nav .nav-link.active {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+        }
+
+        .mobile-nav .dropdown-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            padding: 8px 12px 4px;
+            font-weight: 600;
+        }
+
+        .mobile-nav .dropdown-item {
+            padding: 8px 24px;
+        }
+
+        /* Pure CSS Checkbox Mobile Toggle Logic */
+        #menu-toggle:checked ~ .mobile-nav {
+            display: block;
+        }
+
+        /* ==========================================
+           HERO SECTION
+           ========================================== */
+        .hero-section {
+            padding: 24px 0 80px;
+            position: relative;
+        }
+
+        .hero-card {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            box-shadow: var(--shadow-lg);
+            background-color: #1e293b;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 48px;
+            max-width: 650px;
+            color: var(--white);
+        }
+
+        .hero-title {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: #a7f3d0;
+            margin-bottom: 32px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: var(--radius-full);
+            font-size: 15px;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: rgba(34, 197, 94, 0.9);
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(22, 163, 74, 0.6);
+        }
+
+        /* Floating Category Bar */
+        .category-floating-bar {
+            position: relative;
+            z-index: 20;
+            max-width: 960px;
+            margin: -60px auto 0;
+            padding: 0 16px;
+        }
+
+        .category-grid {
+            background-color: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-lg);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .category-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+
+        .category-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: var(--primary-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .category-icon svg {
+            width: 26px;
+            height: 26px;
+            fill: var(--primary);
+            transition: var(--transition);
+        }
+
+        .category-item:hover .category-icon {
+            background-color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        .category-item:hover .category-icon svg {
+            fill: var(--white);
+        }
+
+        .category-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #334155;
+            transition: var(--transition);
+        }
+
+        .category-item:hover .category-label {
+            color: var(--primary);
+        }
+
+        /* ==========================================
+           CONTENT SLIDER SECTION (PURE CSS SLIDER)
+           ========================================== */
+        .content-section {
+            padding: 40px 0 60px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .section-bar {
+            width: 6px;
+            height: 28px;
+            background-color: var(--primary);
+            border-radius: 4px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        /* Slider Wrapper & Controls */
+        .slider-wrapper {
+            position: relative;
+        }
+
+        /* Pure CSS Horizontal Scroll Container with Snap */
+        .cards-scroll-container {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            padding-bottom: 16px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .cards-scroll-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        /* Card Item */
+        .card-item {
+            flex: 0 0 calc(33.333% - 16px);
+            min-width: 290px;
+            scroll-snap-align: start;
+            background-color: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-item:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-image-box {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card-item:hover .card-image-box img {
+            transform: scale(1.08);
+        }
+
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+            line-height: 1.4;
+            transition: var(--transition);
+        }
+
+        .card-item:hover .card-title {
+            color: var(--primary);
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-muted);
+            padding-top: 12px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .card-readtime {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-link {
+            color: var(--primary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Navigation Arrows (Using Pure CSS Anchors target) */
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: var(--transition);
+        }
+
+        .slider-btn:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .slider-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .slider-btn-prev {
+            left: -20px;
+        }
+
+        .slider-btn-next {
+            right: -20px;
+        }
+
+        /* ==========================================
+           DARK GREEN BANNER SECTION
+           ========================================== */
+        .banner-section {
+            padding: 20px 0 60px;
+        }
+
+        .banner-card {
+            background: linear-gradient(135deg, var(--dark-green) 0%, #14532d 50%, var(--dark-green) 100%);
+            border-radius: 24px;
+            padding: 36px 48px;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-info {
+            max-width: 650px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-tag {
+            display: inline-block;
+            background-color: rgba(22, 163, 74, 0.3);
+            color: #86efac;
+            font-size: 12px;
+            padding: 4px 14px;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(134, 239, 172, 0.3);
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .banner-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .banner-desc {
+            font-size: 14px;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        .btn-white {
+            background-color: var(--white);
+            color: var(--dark-green);
+            font-weight: 600;
+            padding: 12px 36px;
+            border-radius: var(--radius-full);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .btn-white:hover {
+            background-color: var(--primary-light);
+            transform: scale(1.05);
+        }
+
+        /* ==========================================
+           FOOTER SECTION
+           ========================================== */
+        footer {
+            background-color: var(--footer-bg);
+            color: #94a3b8;
+            padding: 60px 0 24px;
+            margin-top: auto;
+            border-top: 1px solid rgba(34, 197, 94, 0.15);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 48px;
+        }
+
+        .footer-about {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-about .logo-title {
+            color: var(--white);
+        }
+
+        .footer-about .logo-subtitle {
+            color: var(--primary);
+        }
+
+        .footer-desc {
+            font-size: 13px;
+            line-height: 1.7;
+            font-weight: 300;
+            color: #cbd5e1;
+        }
+
+        .footer-heading {
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-heading-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--primary);
+            border-radius: 50%;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            color: #cbd5e1;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 4px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .social-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: rgba(22, 163, 74, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--primary);
+        }
+
+        .social-icon:hover {
+            background-color: var(--primary);
+        }
+
+        .social-icon:hover svg {
+            fill: var(--white);
+        }
+
+        .footer-bottom {
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-legal a:hover {
+            color: #cbd5e1;
+        }
+
+        /* ==========================================
+           RESPONSIVE BREAKPOINTS
+           ========================================== */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 32px;
+            }
+            .hero-card {
+                min-height: 400px;
+            }
+            .category-grid {
+                grid-template-columns: repeat(5, 1fr);
+                gap: 8px;
+                padding: 16px 8px;
+            }
+            .category-icon {
+                width: 46px;
+                height: 46px;
+            }
+            .category-icon svg {
+                width: 20px;
+                height: 20px;
+            }
+            .category-label {
+                font-size: 11px;
+            }
+            .card-item {
+                flex: 0 0 calc(50% - 12px);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            .menu-btn {
+                display: block;
+            }
+            .hero-content {
+                padding: 32px 24px;
+            }
+            .hero-title {
+                font-size: 26px;
+            }
+            .hero-subtitle {
+                font-size: 14px;
+                margin-bottom: 24px;
+            }
+            .category-floating-bar {
+                margin-top: -40px;
+            }
+            .banner-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 28px;
+            }
+            .btn-white {
+                width: 100%;
+                text-align: center;
+            }
+            .slider-btn {
+                display: none; /* Rely on native touch scroll swipe on mobile */
+            }
+            .card-item {
+                flex: 0 0 82%;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3v18m0-18C8 3 4 7 4 12c0 3.5 2 6 5 7m3-19c4 0 8 4 8 9 0 3.5-2 6-5 7M7 12h10"/></svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Agricultural</span>
+                        <span class="logo-subtitle">KNOWLEDGE</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="desktop-nav">
+                    <a href="#" class="nav-link active">หน้าหลัก</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link">ความรู้ ▾</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">เกษตรกรยุคใหม่</a>
+                            <a href="#" class="dropdown-item">การจัดการน้ำ</a>
+                            <a href="#" class="dropdown-item">เทคโนโลยีโดรน</a>
+                            <a href="#" class="dropdown-item">3 ห่วง 2 เงื่อนไข</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">เครื่องมือ</a>
+                    <a href="#" class="nav-link">แบบทดสอบ</a>
+                    <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button (Checkbox Hack) -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </label>
+
+                <!-- Mobile Menu Dropdown -->
+                <div class="mobile-nav">
+                    <a href="#" class="nav-link active">หน้าหลัก</a>
+                    <div class="dropdown-title">ความรู้</div>
+                    <a href="#" class="dropdown-item">เกษตรกรยุคใหม่</a>
+                    <a href="#" class="dropdown-item">การจัดการน้ำ</a>
+                    <a href="#" class="dropdown-item">เทคโนโลยีโดรน</a>
+                    <a href="#" class="dropdown-item">3 ห่วง 2 เงื่อนไข</a>
+                    <a href="#" class="nav-link">เครื่องมือ</a>
+                    <a href="#" class="nav-link">แบบทดสอบ</a>
+                    <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-card">
+                    <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?q=80&w=1600&auto=format&fit=crop" 
+                         alt="Thai Farmer Background" 
+                         class="hero-bg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/1600x900/15803d/ffffff?text=Agricultural+Knowledge';">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">เกษตรไทยยั่งยืน<br>เริ่มต้นได้ที่นี่</h1>
+                        <p class="hero-subtitle">ความรู้ • เทคโนโลยี • 3 ห่วง 2 เงื่อนไข</p>
+                        <a href="#content-cards" class="btn btn-primary">
+                            <span>เรียนรู้เพิ่มเติม</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLOATING CATEGORY BAR -->
+            <div class="category-floating-bar">
+                <div class="category-grid">
+                    <a href="#" class="category-item">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                        </div>
+                        <span class="category-label">เกษตรกรยุคใหม่</span>
+                    </a>
+                    <a href="#" class="category-item">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                        </div>
+                        <span class="category-label">จัดการน้ำ</span>
+                    </a>
+                    <a href="#" class="category-item">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V18h-2v-1.07A6 6 0 0 1 5.07 13H4v-2h1.07A6 6 0 0 1 11 5.07V4h2v1.07A6 6 0 0 1 18.93 11H20v2h-1.07A6 6 0 0 1 13 16.93z"/></svg>
+                        </div>
+                        <span class="category-label">เทคโนโลยี</span>
+                    </a>
+                    <a href="#" class="category-item">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2a9 9 0 0 0-9 9c0 4.17 2.84 7.67 6.69 8.69L12 22l2.31-2.31C18.16 18.67 21 15.17 21 11a9 9 0 0 0-9-9z"/></svg>
+                        </div>
+                        <span class="category-label">3 ห่วง 2 เงื่อนไข</span>
+                    </a>
+                    <a href="#" class="category-item">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.6C.4 7 1 10 3 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.3z"/></svg>
+                        </div>
+                        <span class="category-label">เครื่องมือ</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENT SLIDER SECTION -->
+        <section id="content-cards" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-bar"></div>
+                    <h2 class="section-title">เนื้อหาน่าสนใจวันนี้</h2>
+                </div>
+
+                <div class="slider-wrapper">
+                    <!-- Pure CSS Target Navigation Anchors -->
+                    <a href="#card-1" class="slider-btn slider-btn-prev" aria-label="Previous">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                    </a>
+
+                    <!-- Scrollable Cards Container -->
+                    <div class="cards-scroll-container">
+                        <!-- Card 1 -->
+                        <div id="card-1" class="card-item">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Agricultural Drone"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/22c55e/ffffff?text=Drone+Tech';">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">เทคโนโลยีโดรนเพื่อการเกษตรแม่นยำสูง</h3>
+                                <div class="card-footer">
+                                    <span class="card-readtime">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                        อ่าน 4 นาที
+                                    </span>
+                                    <a href="#" class="card-link">
+                                        <span>เรียนรู้เพิ่มเติม</span>
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div id="card-2" class="card-item">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Soil Management"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/22c55e/ffffff?text=Soil+Management';">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">การจัดการดินอย่างยั่งยืนเพื่อเพิ่มผลผลิต</h3>
+                                <div class="card-footer">
+                                    <span class="card-readtime">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                        อ่าน 6 นาที
+                                    </span>
+                                    <a href="#" class="card-link">
+                                        <span>เรียนรู้เพิ่มเติม</span>
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div id="card-3" class="card-item">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Economic Crops"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/22c55e/ffffff?text=Economic+Crops';">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">พืชเศรษฐกิจที่น่าสนใจในยุคดิจิทัล</h3>
+                                <div class="card-footer">
+                                    <span class="card-readtime">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                        อ่าน 5 นาที
+                                    </span>
+                                    <a href="#" class="card-link">
+                                        <span>เรียนรู้เพิ่มเติม</span>
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div id="card-4" class="card-item">
+                            <div class="card-image-box">
+                                <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Smart Irrigation"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/22c55e/ffffff?text=Smart+Irrigation';">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">ระบบให้น้ำอัจฉริยะประหยัดพลังงาน</h3>
+                                <div class="card-footer">
+                                    <span class="card-readtime">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                        อ่าน 7 นาที
+                                    </span>
+                                    <a href="#" class="card-link">
+                                        <span>เรียนรู้เพิ่มเติม</span>
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#card-3" class="slider-btn slider-btn-next" aria-label="Next">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER SECTION -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-card">
+                    <div class="banner-info">
+                        <span class="banner-tag">ปรัชญาเศรษฐกิจพอเพียง</span>
+                        <h3 class="banner-title">องค์ความรู้ 3 ห่วง 2 เงื่อนไข</h3>
+                        <p class="banner-desc">แนวทางเพื่อความมั่นคงและยั่งยืนทางการเกษตร</p>
+                    </div>
+                    <a href="#" class="btn-white">เข้าชม</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About -->
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 3v18m0-18C8 3 4 7 4 12c0 3.5 2 6 5 7m3-19c4 0 8 4 8 9 0 3.5-2 6-5 7M7 12h10"/></svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Agricultural</span>
+                            <span class="logo-subtitle">KNOWLEDGE</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+                    </p>
+                </div>
+
+                <!-- Main Menu -->
+                <div>
+                    <h4 class="footer-heading"><span class="footer-heading-dot"></span> เมนูหลัก</h4>
+                    <div class="footer-links">
+                        <a href="#">หน้าหลัก</a>
+                        <a href="#">ความรู้เกษตร</a>
+                        <a href="#">เครื่องมือคำนวณ</a>
+                        <a href="#">แบบทดสอบ</a>
+                        <a href="#">เกี่ยวกับเรา</a>
+                    </div>
+                </div>
+
+                <!-- Knowledge -->
+                <div>
+                    <h4 class="footer-heading"><span class="footer-heading-dot"></span> ความรู้</h4>
+                    <div class="footer-links">
+                        <a href="#">เกษตรกรยุคใหม่</a>
+                        <a href="#">การจัดการน้ำ</a>
+                        <a href="#">เทคโนโลยีโดรน</a>
+                        <a href="#">3 ห่วง 2 เงื่อนไข</a>
+                        <a href="#">พืชเศรษฐกิจ</a>
+                    </div>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h4 class="footer-heading"><span class="footer-heading-dot"></span> ติดต่อเรา</h4>
+                    <p class="footer-desc" style="margin-bottom: 12px;">
+                        ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LINE">
+                            <svg viewBox="0 0 24 24"><path d="M20 10c0-4.42-3.81-8-8.5-8S3 5.58 3 10c0 3.95 3.03 7.25 7.18 7.85.28.06.66.18.76.42.09.22.06.56.03.78l-.13.79c-.04.25-.19.98.86.53 1.05-.44 5.67-3.34 7.73-5.72C20.48 13.25 20 11.67 20 10z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">นโยบายความเป็นส่วนตัว</a>
+                    <span>•</span>
+                    <a href="#">ข้อกำหนดการใช้งาน</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

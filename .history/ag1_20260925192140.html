@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agricultural Knowledge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="ag1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class=""></i>
+        </div>
+        <div class="brand-text">
+          <h1 class="title">Agricultural</h1>
+          <span class="subtitle">Knowledge</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">หน้าหลัก</a>
+        <a href="#">ความรู้ <i class="fa-solid fa-caret-down"></i> </a>
+        <a href="#">เครื่องมือ</a>
+        <a href="#">แบบทดสอบ</a>
+        <a href="#">เกี่ยวกับเรา</a>
+      </nav>
+    </header>
+
+    <!-- Full-Width Hero Section (เต็มความกว้างจอ) -->
+    <section class="hero-section-full">
+      <div class="hero-banner-bg">
+        <!-- รูปภาพ Hero Background -->
+        <img src="img/aghero.jpg" alt="เกษตรไทยยั่งยืน" />
+        <div class="overlay"></div>
+
+        <!-- ข้อความบน Hero Banner -->
+        <div class="hero-content">
+          <h2 class="hero-title">เกษตรไทยยั่งยืน<br />เริ่มต้นได้ที่นี่</h2>
+          <p class="hero-subtitle">ความรู้ • เทคโนโลยี • 3 ห่วง 2 เงื่อนไข</p>
+          <a href="#" class="btn-learn-more"> เรียนรู้เพิ่มเติม </a>
+        </div>
+      </div>
+
+      <!-- แถบหมวดหมู่ลอยตรงกลาง (Floating Category Bar) -->
+      <div class="category-bar-wrapper">
+        <div class="category-bar">
+          <a href="#" class="category-item">
+            <div class="cat-icon"><i class="fa-solid fa-sprout"></i></div>
+            <span>เกษตรกรยุคใหม่</span>
+          </a>
+          <a href="#" class="category-item">
+            <div class="cat-icon"><i class="fa-solid fa-droplet"></i></div>
+            <span>จัดการน้ำ</span>
+          </a>
+          <a href="#" class="category-item">
+            <div class="cat-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span>เทคโนโลยี</span>
+          </a>
+          <a href="#" class="category-item">
+            <div class="cat-icon"><i class="fa-solid fa-clover"></i></div>
+            <span>3 ห่วง 2 เงื่อนไข</span>
+          </a>
+          <a href="#" class="category-item">
+            <div class="cat-icon"><i class="fa-solid fa-wrench"></i></div>
+            <span>เครื่องมือ</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container (ส่วนเนื้อหาจำกัดความกว้างตรงกลาง) -->
+    <main class="main-container">
+      <!-- Section: เนื้อหาน่าสนใจวันนี้ -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">เนื้อหาน่าสนใจวันนี้</h2>
+        </div>
+
+        <div class="carousel-container">
+          <!-- ปุ่มกดเลื่อน Left / Right -->
+          <a href="#card-3" class="slider-btn prev-btn" aria-label="Previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+
+          <div class="cards-scroll-wrapper">
+            <!-- Card 1 -->
+            <div class="content-card" id="card-1">
+              <div class="card-img-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80"
+                  alt="เทคโนโลยีโดรนเพื่อการเกษตร"
+                />
+              </div>
+              <div class="card-body">
+                <h3>เทคโนโลยีโดรนเพื่อการเกษตร</h3>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="content-card" id="card-2">
+              <div class="card-img-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1592417817098-8f3d6ef23a81?auto=format&fit=crop&w=600&q=80"
+                  alt="การจัดการดินอย่างยั่งยืน"
+                />
+              </div>
+              <div class="card-body">
+                <h3>การจัดการดินอย่างยั่งยืน</h3>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="content-card" id="card-3">
+              <div class="card-img-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80"
+                  alt="พืชเศรษฐกิจที่น่าสนใจ"
+                />
+              </div>
+              <div class="card-body">
+                <h3>พืชเศรษฐกิจที่น่าสนใจ</h3>
+              </div>
+            </div>
+
+             <!-- Card 4 -->
+            <div class="content-card" id="card-3">
+              <div class="card-img-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80"
+                  alt="พืชเศรษฐกิจที่น่าสนใจ"
+                />
+              </div>
+              <div class="card-body">
+                <h3>พืชเศรษฐกิจที่น่าสนใจ</h3>
+              </div>
+            </div>
+          </div>
+
+          <a href="#card-2" class="slider-btn next-btn" aria-label="Next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <!-- Green Banner Card -->
+        <div class="philosophy-banner">
+          <div class="banner-info">
+            <span class="banner-badge">ปรัชญาเศรษฐกิจพอเพียง</span>
+            <h3 class="banner-title">องค์ความรู้ 3 ห่วง 2 เงื่อนไข</h3>
+            <p class="banner-desc">
+              แนวทางเพื่อความมั่นคงและยั่งยืนทางการเกษตร
+            </p>
+          </div>
+          <a href="#" class="btn-read-banner">เข้าชม</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <!-- โลโก้และคำอธิบาย -->
+        <div class="footer-about">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🌱</span>
+
+            <div>
+              <strong>Agricultural</strong>
+              <small>Knowledge</small>
+            </div>
+          </div>
+
+          <p>
+            แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร
+            สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+          </p>
+        </div>
+
+        <!-- เมนูหลัก -->
+        <div class="footer-column">
+          <h3>เมนูหลัก</h3>
+
+          <ul>
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="knowledge.html">ความรู้</a></li>
+            <li><a href="tools.html">เครื่องมือ</a></li>
+            <li><a href="quiz.html">แบบทดสอบ</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+
+        <!-- หมวดความรู้ -->
+        <div class="footer-column">
+          <h3>ความรู้</h3>
+
+          <ul>
+            <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
+            <li><a href="water.html">การจัดการน้ำ</a></li>
+            <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+            <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
+            <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
+          </ul>
+        </div>
+
+        <!-- ติดต่อ -->
+        <div class="footer-contact">
+          <h3>ติดต่อเรา</h3>
+
+          <p>
+            ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ
+            เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+          </p>
+
+          <!-- ใส่ URL ของช่องทางจริงใน href -->
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" class="social-line" aria-label="LINE">LINE</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ส่วนล่าง -->
+      <div class="footer-bottom">
+        <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+
+        <div class="footer-policy">
+          <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+          <span>·</span>
+          <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

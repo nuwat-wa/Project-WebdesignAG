@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/ag6.css">
+</head>
+<body>
+
+  <header class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class=""></i>
+        </div>
+        <div class="brand-text">
+          <h1 class="title">Agricultural</h1>
+          <span class="subtitle">Knowledge</span>
+        </div>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#">หน้าหลัก</a>
+
+        <div class="dropdown-hover">
+          <a href="#" class="dropdown-btn"
+            >การเรียนรู้ <i class="fa-solid fa-caret-down"></i
+          ></a>
+
+          <div class="menu-level1">
+            <!-- มือใหม่ -->
+            <div class="menu-item-has-children">
+              <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
+              <div class="menu-level2">
+                <a href="#">เกษตรสมัยใหม่</a>
+                <a href="#">ปลูกข้าว</a>
+                <a href="#">พืชสวน</a>
+                <a href="#">พืชไร่</a>
+                <a href="#">ปลูกผัก</a>
+                <a href="#">การเตรียมดิน</a>
+                <a href="#">การเลือกปุ๋ย</a>
+                <a href="#">โรคศัตรูพืช</a>
+              </div>
+            </div>
+
+            <!-- ผู้มีพื้นฐาน -->
+            <div class="menu-item-has-children">
+              <a href="#"
+                >ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
+              ></a>
+              <div class="menu-level2">
+                <a href="#">เทคโนโลยีการเกษตร</a>
+                <a href="#">การวางแผนการผลิต</a>
+                <a href="#">AI / Big Data</a>
+                <a href="#">ระบบน้ำอัจฉริยะ</a>
+                <a href="#">การจัดการต้นทุน</a>
+              </div>
+            </div>
+
+            <a href="#">หลักการพอเพียง</a>
+            <a href="#">เรื่องเล่า</a>
+            <a href="#">บทความ</a>
+
+          </div>
+        </div>
+
+        <a href="#">เครื่องมือ</a>
+        <a href="#">แบบทดสอบ</a>
+        <a href="ag2.html">เกี่ยวกับเรา</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Section Title -->
+      <section class="section-header">
+        <h1 class="main-title">พืชสวนที่น่าสนใจ</h1>
+        <p class="section-subtitle">ปลูกผลไม้ สร้างรายได้</p>
+      </section>
+
+      <!-- Plant Cards Grid (8 Cards) -->
+      <section class="cards-grid">
+        
+        <!-- Card 1: มะม่วง -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=600&auto=format&fit=crop" alt="มะม่วง">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">มะม่วง</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 6×8 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 1,200 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-mango" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 2: มะนาว -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1534531141161-e4e6f48a3623?q=80&w=600&auto=format&fit=crop" alt="มะนาว">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">มะนาว</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 6×6 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 800 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-lime" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 3: กล้วย -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=600&auto=format&fit=crop" alt="กล้วย">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">กล้วย</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 3×3 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 1,000 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-banana" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 4: มะพร้าว -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1543773495-2cd9248a5b47?q=80&w=600&auto=format&fit=crop" alt="มะพร้าว">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">มะพร้าว</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 8×8 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 1,500 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-coconut" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 5: อะโวคาโด -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=600&auto=format&fit=crop" alt="อะโวคาโด">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">อะโวคาโด</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 6×6 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 1,200 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-avocado" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 6: ส้ม -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=600&auto=format&fit=crop" alt="ส้ม">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">ส้ม</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 7×7 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 1,000 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-orange" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 7: องุ่น -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=600&auto=format&fit=crop" alt="องุ่น">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">องุ่น</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 3×3 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 800 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-grape" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+        <!-- Card 8: ทุเรียน -->
+        <article class="plant-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=600&auto=format&fit=crop" alt="ทุเรียน">
+          </div>
+          <div class="card-body">
+            <h2 class="plant-name">ทุเรียน</h2>
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-seedling text-green"></i>
+                <span>ระยะปลูก 8×8 ม.</span>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-droplet text-blue"></i>
+                <span>ใช้น้ำ 1,500 ลิตร/ไร่</span>
+              </div>
+            </div>
+            <a href="#modal-durian" class="btn-detail">ดูข้อมูลเพิ่มเติม</a>
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ================= PURE CSS MODALS (POPUP) ================= -->
+
+  <!-- Modal 1: มะม่วง -->
+  <div id="modal-mango" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?q=80&w=600&auto=format&fit=crop" alt="มะม่วง">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">มะม่วง</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">6×8 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">1,200 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>การปลูกมะม่วงควรเตรียมดินให้ร่วนซุย การให้น้ำอย่างสม่ำเสมอในช่วงติดดอกจะช่วยเพิ่มปริมาณผลผลิตได้อย่างดีเยี่ยม</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: มะนาว -->
+  <div id="modal-lime" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1534531141161-e4e6f48a3623?q=80&w=600&auto=format&fit=crop" alt="มะนาว">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">มะนาว</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">6×6 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">800 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>มะนาวต้องการแสงแดดจัด ควรดูแลเรื่องการระบายน้ำไม่ให้ท่วมขัง และตัดแต่งกิ่งเพื่อให้ทรงพุ่มรับแสงอย่างทั่วถึง</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: กล้วย -->
+  <div id="modal-banana" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=600&auto=format&fit=crop" alt="กล้วย">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">กล้วย</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">3×3 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">1,000 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>กล้วยเป็นพืชโตไว ปลูกง่าย ควรแต่งหน่อให้เหลือต้นแม่และหน่อตามไม่เกิน 2-3 หน่อต่อกอเพื่อผลผลิตที่สมบูรณ์</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: มะพร้าว -->
+  <div id="modal-coconut" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1543773495-2cd9248a5b47?q=80&w=600&auto=format&fit=crop" alt="มะพร้าว">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">มะพร้าว</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">8×8 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">1,500 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>มะพร้าวน้ำหอมเจริญเติบโตได้ดีในที่ชุ่มชื้น การใส่เกลือแกงรอบโคนต้นปีละครั้งช่วยเพิ่มความหวานให้ลูกมะพร้าวได้</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: อะโวคาโด -->
+  <div id="modal-avocado" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?q=80&w=600&auto=format&fit=crop" alt="อะโวคาโด">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">อะโวคาโด</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">6×6 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">1,200 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>ชอบดินระบายน้ำดี ไม่ชอบน้ำขัง การเลือกสายพันธุ์ที่เหมาะสมกับสภาพอากาศในพื้นที่ถือเป็นหัวใจสำคัญ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: ส้ม -->
+  <div id="modal-orange" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?q=80&w=600&auto=format&fit=crop" alt="ส้ม">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">ส้ม</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">7×7 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">1,000 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>การจัดการปุ๋ยชีวภาพและแร่ธาตุอาหารส้มจะช่วยให้รสชาติหวานอมเปรี้ยวกลมกล่อม นำไปขายได้ราคาสูง</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: องุ่น -->
+  <div id="modal-grape" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=600&auto=format&fit=crop" alt="องุ่น">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">องุ่น</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">3×3 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">800 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>ต้องมีการทำค้างให้เลื้อย และทำการตัดแต่งกิ่ง (Pruning) เพื่อกระตุ้นการติดดอกและออกช่อผล</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: ทุเรียน -->
+  <div id="modal-durian" class="modal-overlay">
+    <div class="modal-card">
+      <a href="#" class="modal-close-btn">&times;</a>
+      <div class="modal-header-img">
+        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=600&auto=format&fit=crop" alt="ทุเรียน">
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">ทุเรียน</h2>
+        <div class="modal-info-grid">
+          <div class="modal-info-item">
+            <i class="fa-solid fa-seedling text-green"></i>
+            <div>
+              <span class="info-label">ระยะปลูก</span>
+              <p class="info-val">8×8 ม.</p>
+            </div>
+          </div>
+          <div class="modal-info-item">
+            <i class="fa-solid fa-droplet text-blue"></i>
+            <div>
+              <span class="info-label">ปริมาณน้ำที่ใช้</span>
+              <p class="info-val">1,500 ลิตร/ไร่</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-desc-box">
+          <h3>ข้อมูลการดูแลรักษาเพิ่มเติม</h3>
+          <p>พืชเศรษฐกิจมูลค่าสูง ต้องคุมความชื้นอย่างแม่นยำ ป้องกันโรครากเน่าโคนเน่าด้วยระบบการระบายน้ำที่ดี</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+</div>
+</body>
+</html>
