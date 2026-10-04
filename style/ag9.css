@@ -213,7 +213,7 @@ body {
 }
 
 .main-title {
-  margin-bottom: 32px;
+  margin-bottom: 7px;
   color: #14532d;
   font-size: 26px;
   font-weight: 800;
@@ -273,6 +273,12 @@ body {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 4px;
+}
+
+.plant-card-desc {
+  margin-bottom: 20px;
+  color: #6b7280;
+  font-size: 13px;
 }
 
 .step-title {
@@ -838,5 +844,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .plant-card-desc {
+    margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 1.6;
   }
 }

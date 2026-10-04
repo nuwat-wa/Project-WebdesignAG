@@ -72,6 +72,24 @@ body {
   line-height: 1.1;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1f2937;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-title::before {
+  content: "";
+  width: 5px;
+  height: 22px;
+  background: #10b981;
+  border-radius: 4px;
+}
+
 /* nav */
 .nav-links {
     display: grid;
@@ -718,7 +736,7 @@ body {
   }
 
   .cards-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 

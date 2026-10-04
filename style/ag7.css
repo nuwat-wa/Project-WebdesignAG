@@ -211,7 +211,7 @@ body {
 
 .main-title {
   color: #114e2e;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
@@ -282,27 +282,11 @@ input[type="radio"][name="plant-tab"] {
   font-size: 16px;
 }
 
-#tab-corn:checked ~ .tabs-wrapper .label-corn,
-#tab-cassava:checked ~ .tabs-wrapper .label-cassava,
-#tab-sugarcane:checked ~ .tabs-wrapper .label-sugarcane,
-#tab-sunflower:checked ~ .tabs-wrapper .label-sunflower,
-#tab-soybean:checked ~ .tabs-wrapper .label-soybean {
+#tab-corn:checked ~ .tabs-wrapper .label-corn {
   background: #064e3b;
   border-color: #194028;
   color: #fff;
   box-shadow: 0 4px 12px rgba(25, 64, 40, 0.2);
-}
-
-.panel {
-  display: none;
-}
-
-#tab-corn:checked ~ .tab-panels .panel-corn,
-#tab-cassava:checked ~ .tab-panels .panel-cassava,
-#tab-sugarcane:checked ~ .tab-panels .panel-sugarcane,
-#tab-sunflower:checked ~ .tab-panels .panel-sunflower,
-#tab-soybean:checked ~ .tab-panels .panel-soybean {
-  display: block;
 }
 
 .details-grid {
@@ -460,11 +444,22 @@ input[type="radio"][name="plant-tab"] {
   font-weight: 700;
 }
 
-.tips-section-title {
-  margin-bottom: 16px;
-  color: #111827;
-  font-size: 18px;
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1f2937;
+  font-size: 22px;
   font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-title::before {
+  content: "";
+  width: 5px;
+  height: 22px;
+  background: #10b981;
+  border-radius: 4px;
 }
 
 .tips-grid {
