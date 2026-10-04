@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดสรรพื้นที่อย่างพอประมาณ</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style/ag14.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="img/icon.png" alt="icon">
+            </div>
+
+            <div class="brand-text">
+                <h1 class="title">Agricultural</h1>
+                <span class="subtitle">Knowledge</span>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="index.html">หน้าหลัก</a>
+
+            <div class="dropdown-hover">
+                <a href="#" class="dropdown-btn active">
+                    ความรู้
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+
+                <div class="menu-level1">
+
+                    <div class="menu-item-has-children">
+                        <a href="#">
+                            มือใหม่
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+
+                        <div class="menu-level2">
+                            <a href="ag4.html">เกษตรสมัยใหม่</a>
+                            <a href="ag5.html">ปลูกข้าว</a>
+                            <a href="ag6.html">พืชสวน</a>
+                            <a href="ag7.html">พืชไร่</a>
+                            <a href="ag8.html">ปลูกผัก</a>
+                            <a href="ag9.html">การเตรียมดิน</a>
+                            <a href="ag11.html">การเลือกปุ๋ย</a>
+                            <a href="ag12.html">โรคศัตรูพืช</a>
+                            <a href="ag16.html">ความเสี่ยง</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-has-children">
+                        <a href="#">
+                            ผู้มีพื้นฐาน
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+
+                        <div class="menu-level2">
+                            <a href="ag13.html">เทคโนโลยีการเกษตร</a>
+                            <a href="ag15.html">การวางแผนการผลิต</a>
+                            <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
+                            <a href="ag14.html">การจัดการที่ดิน</a>
+                        </div>
+                    </div>
+
+                    <a href="ag3.html">หลักการพอเพียง</a>
+                    <a href="ag17.html">เรื่องเล่า</a>
+                    <a href="ag18.html">บทความ</a>
+
+                </div>
+            </div>
+
+            <a href="ag19.html">เครื่องมือ</a>
+            <a href="ag20.html">แบบทดสอบ</a>
+            <a href="ag2.html">เกี่ยวกับเรา</a>
+        </nav>
+    </header>
+
+    <main class="allocation-page">
+
+        <section class="allocation-card" aria-labelledby="page-title">
+
+            <h1 id="page-title">วางแผนจัดสรรพื้นที่เกษตร</h1>
+
+            <div class="allocation-layout">
+
+                <!-- ฝั่งซ้าย: การแบ่งพื้นที่ -->
+
+                <div class="allocation-controls">
+
+                    <div class="total-area">
+                        พื้นที่ทั้งหมด <strong>5</strong> ไร่
+                    </div>
+
+                    <div class="allocation-list">
+
+                        <!-- พื้นที่ปลูกพืช -->
+
+                        <div class="allocation-row">
+
+                            <div class="allocation-label">
+                                <span class="allocation-icon" aria-hidden="true">
+                                    🌱
+                                </span>
+
+                                <span>ปลูกพืช</span>
+                            </div>
+
+                            <div class="allocation-track" aria-hidden="true">
+                                <div class="allocation-fill plant-fill"></div>
+                            </div>
+
+                            <div class="allocation-value">
+                                <strong>60%</strong>
+                                <span>3 ไร่</span>
+                            </div>
+
+                        </div>
+
+                        <!-- พื้นที่แหล่งน้ำ -->
+
+                        <div class="allocation-row">
+
+                            <div class="allocation-label">
+                                <span class="allocation-icon" aria-hidden="true">
+                                    💧
+                                </span>
+
+                                <span>แหล่งน้ำ</span>
+                            </div>
+
+                            <div class="allocation-track" aria-hidden="true">
+                                <div class="allocation-fill water-fill"></div>
+                            </div>
+
+                            <div class="allocation-value">
+                                <strong>30%</strong>
+                                <span>1.5 ไร่</span>
+                            </div>
+
+                        </div>
+
+                        <!-- พื้นที่อื่น ๆ -->
+
+                        <div class="allocation-row">
+
+                            <div class="allocation-label">
+                                <span class="allocation-icon" aria-hidden="true">
+                                    🏡
+                                </span>
+
+                                <span>พื้นที่อื่น ๆ</span>
+                            </div>
+
+                            <div class="allocation-track" aria-hidden="true">
+                                <div class="allocation-fill other-fill"></div>
+                            </div>
+
+                            <div class="allocation-value">
+                                <strong>10%</strong>
+                                <span>0.5 ไร่</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ฝั่งขวา: สรุปข้อมูล -->
+
+                <div class="allocation-summary">
+
+                    <div class="result-status">
+                        ✓ จัดสรรพื้นที่ครบ 100%
+                    </div>
+
+                    <article class="result-card">
+
+                        <div class="result-icon" aria-hidden="true">
+                            🌿
+                        </div>
+
+                        <div class="result-text">
+
+                            <h2>ตัวอย่างการแบ่งพื้นที่ 5 ไร่</h2>
+
+                            <p>
+                                ใช้พื้นที่ปลูกพืช 3 ไร่ จัดพื้นที่แหล่งน้ำ 1.5 ไร่
+                                และเหลืออีก 0.5 ไร่สำหรับที่พัก ทางเดิน หรือเก็บอุปกรณ์
+                            </p>
+
+                            <p>
+                                นำสัดส่วนนี้ไปใช้เป็นแนวทางเบื้องต้น
+                                แล้วปรับให้เข้ากับพื้นที่และการใช้งานของคุณ
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <p class="allocation-note">
+                        หมายเหตุ: เป็นตัวอย่างเพื่อการเรียนรู้
+                        ควรพิจารณาชนิดพืช สภาพดิน ปริมาณฝน
+                        และน้ำที่มีอยู่ก่อนวางแผนใช้งานจริง
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+
+                    <span class="footer-logo-icon">
+                        <img src="img/icon.png" alt="icon">
+                    </span>
+
+                    <div>
+                        <strong>Agricultural</strong>
+                        <small>Knowledge</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร
+                    สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>เมนูหลัก</h3>
+
+                <ul>
+                    <li><a href="home.html">หน้าหลัก</a></li>
+                    <li><a href="knowledge.html">ความรู้</a></li>
+                    <li><a href="tools.html">เครื่องมือ</a></li>
+                    <li><a href="quiz.html">แบบทดสอบ</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>ความรู้</h3>
+
+                <ul>
+                    <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
+                    <li><a href="water.html">การจัดการน้ำ</a></li>
+                    <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+                    <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
+                    <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>ติดต่อเรา</h3>
+
+                <p>
+                    ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ
+                    เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="social-line" aria-label="LINE">
+                        <i class="fa-brands fa-line"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Agricultural Knowledge Platform. All rights reserved.
+            </p>
+
+            <div class="footer-policy">
+                <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+                <span>·</span>
+                <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
