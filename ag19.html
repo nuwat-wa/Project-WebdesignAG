@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agricultural Knowledge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/styles/ag19.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="img/icon.png" alt="icon">
+            </div>
+            <div class="brand-text">
+                <h1 class="title">Agricultural</h1>
+                <span class="subtitle">Knowledge</span>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">หน้าหลัก</a>
+
+            <div class="dropdown-hover">
+                <a href="#" class="dropdown-btn">ความรู้ <i class="fa-solid fa-caret-down"></i
+          ></a>
+
+                <div class="menu-level1">
+
+                    <div class="menu-item-has-children">
+                        <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
+                        <div class="menu-level2">
+                            <a href="ag4.html">เกษตรสมัยใหม่</a>
+                            <a href="ag5.html">ปลูกข้าว</a>
+                            <a href="ag6.html">พืชสวน</a>
+                            <a href="ag7.html">พืชไร่</a>
+                            <a href="ag8.html">ปลูกผัก</a>
+                            <a href="ag9.html">การเตรียมดิน</a>
+                            <a href="ag11.html">การเลือกปุ๋ย</a>
+                            <a href="ag12.html">โรคศัตรูพืช</a>
+                            <a href="ag16.html">ความเสี่ยง</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-has-children">
+                        <a href="#">ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
+              ></a>
+                        <div class="menu-level2">
+                            <a href="ag13.html">เทคโนโลยีการเกษตร</a>
+                            <a href="ag15.html">การวางแผนการผลิต</a>
+                            <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
+                            <a href="ag14.html">การจัดการที่ดิน</a>
+                        </div>
+                    </div>
+
+                    <a href="ag3.html">หลักการพอเพียง</a>
+                    <a href="ag17.html">เรื่องเล่า</a>
+                    <a href="ag18.html">บทความ</a>
+                </div>
+            </div>
+
+            <a href="ag19.html">เครื่องมือ</a>
+            <a href="ag20.html">แบบทดสอบ</a>
+            <a href="ag2.html" class="">เกี่ยวกับเรา</a>
+        </nav>
+    </header>
+
+    <main class="calculator-page">
+
+        <section class="calculator-card" aria-labelledby="page-title">
+
+            <div class="page-heading">
+
+                <div>
+                    <span class="page-badge">วางแผนการเกษตร</span>
+                    <h1 id="page-title">Agri Calculator</h1>
+                </div>
+
+                <p>เรียนรู้การคำนวณต้นทุน ผลผลิต และรายได้</p>
+
+            </div>
+
+
+            <!-- ตัวควบคุมแท็บ -->
+            <div class="calculator-browser">
+
+                <input class="tab-radio" type="radio" name="calculator-tab" id="tab-cost" aria-label="ดูตัวอย่างคำนวณต้นทุน" checked>
+
+                <input class="tab-radio" type="radio" name="calculator-tab" id="tab-yield" aria-label="ดูตัวอย่างคำนวณผลผลิต">
+
+                <input class="tab-radio" type="radio" name="calculator-tab" id="tab-income" aria-label="ดูตัวอย่างคำนวณรายได้">
+
+
+                <div class="calculator-tabs">
+                    <label for="tab-cost" class="cost-tab">
+                        คำนวณต้นทุน
+                    </label>
+
+                    <label for="tab-yield" class="yield-tab">
+                        คำนวณผลผลิต
+                    </label>
+
+                    <label for="tab-income" class="income-tab">
+                        คำนวณรายได้
+                    </label>
+                </div>
+
+                <p class="preview-note">
+                    ตัวอย่างเพื่อการเรียนรู้ — ข้อมูลในหน้านี้ยังแก้ไขและคำนวณใหม่ไม่ได้
+                </p>
+
+
+                <div class="calculator-panels">
+
+                    <!-- แท็บต้นทุน -->
+                    <section class="calc-panel cost-panel" aria-labelledby="cost-title">
+
+                        <div class="input-section">
+
+                            <h2 id="cost-title">ข้อมูลต้นทุน</h2>
+                            <p class="section-description">
+                                ค่าใช้จ่ายรวมทั้งแปลงในหนึ่งรอบการปลูก
+                            </p>
+
+                            <div class="field-row">
+                                <label for="cost-area">พื้นที่เพาะปลูก</label>
+
+                                <div class="field-group">
+                                    <div class="input-box">
+                                        <input id="cost-area" type="text" value="5" readonly>
+                                        <span>ไร่</span>
+                                    </div>
+
+                                    <span class="crop-name">🌾 ข้าว</span>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <label for="seed-cost">เมล็ดพันธุ์</label>
+
+                                <div class="input-box">
+                                    <input id="seed-cost" type="text" value="500" readonly>
+                                    <span>บาท</span>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <label for="fertilizer-cost">ปุ๋ย</label>
+
+                                <div class="input-box">
+                                    <input id="fertilizer-cost" type="text" value="1,200" readonly>
+                                    <span>บาท</span>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <label for="water-cost">น้ำ</label>
+
+                                <div class="input-box">
+                                    <input id="water-cost" type="text" value="500" readonly>
+                                    <span>บาท</span>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <label for="labor-cost">ค่าแรง</label>
+
+                                <div class="input-box">
+                                    <input id="labor-cost" type="text" value="2,000" readonly>
+                                    <span>บาท</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <aside class="result-card" aria-label="ผลคำนวณต้นทุน">
+
+                            <span class="result-badge">ผลลัพธ์ตัวอย่าง</span>
+
+                            <div class="result-item">
+                                <span class="result-icon yellow" aria-hidden="true">
+                                    🌱
+                                </span>
+
+                                <div>
+                                    <h3>ต้นทุนรวม</h3>
+                                    <p class="result-number">
+                                        4,200 <span>บาท</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="result-item">
+                                <span class="result-icon green" aria-hidden="true">
+                                    🌾
+                                </span>
+
+                                <div>
+                                    <h3>ต้นทุนต่อไร่</h3>
+                                    <p class="result-number">
+                                        840 <span>บาท/ไร่</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="formula-box">
+                                <strong>วิธีคำนวณ</strong>
+                                <p>500 + 1,200 + 500 + 2,000 = 4,200 บาท</p>
+                                <p>4,200 ÷ 5 ไร่ = 840 บาท/ไร่</p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+
+
+                    <!-- แท็บผลผลิต -->
+                    <section class="calc-panel yield-panel" aria-labelledby="yield-title">
+
+                        <div class="input-section">
+
+                            <h2 id="yield-title">ข้อมูลผลผลิต</h2>
+                            <p class="section-description">
+                                ประมาณผลผลิตรวมจากพื้นที่และผลผลิตต่อไร่
+                            </p>
+
+                            <div class="field-row">
+                                <label for="yield-area">พื้นที่เพาะปลูก</label>
+
+                                <div class="field-group">
+                                    <div class="input-box">
+                                        <input id="yield-area" type="text" value="5" readonly>
+                                        <span>ไร่</span>
+                                    </div>
+
+                                    <span class="crop-name">🌾 ข้าว</span>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <label for="yield-per-rai">ผลผลิตต่อไร่</label>
+
+                                <div class="input-box">
+                                    <input id="yield-per-rai" type="text" value="600" readonly>
+                                    <span>กก./ไร่</span>
+                                </div>
+                            </div>
+
+                            <div class="information-box">
+                                <h3>เลือกตัวเลขจากข้อมูลของแปลง</h3>
+                                <p>
+                                    ใช้บันทึกผลผลิตที่ผ่านมาเป็นข้อมูลประกอบ ตัวเลข 600 กก./ไร่ในหน้านี้เป็นเพียง สมมติฐานสำหรับแสดงวิธีคำนวณ
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <aside class="result-card" aria-label="ผลคำนวณผลผลิต">
+
+                            <span class="result-badge">ผลลัพธ์ตัวอย่าง</span>
+
+                            <div class="result-item">
+                                <span class="result-icon yellow" aria-hidden="true">
+                                    🌾
+                                </span>
+
+                                <div>
+                                    <h3>ผลผลิตรวมโดยประมาณ</h3>
+                                    <p class="result-number">
+                                        3,000 <span>กก.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="result-item">
+
+                                <div>
+                                    <h3>คิดเป็น</h3>
+                                    <p class="result-number">
+                                        3 <span>ตัน</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="formula-box">
+                                <strong>วิธีคำนวณ</strong>
+                                <p>5 ไร่ × 600 กก./ไร่ = 3,000 กก.</p>
+                                <p>3,000 ÷ 1,000 = 3 ตัน</p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+
+
+                    <!-- แท็บรายได้ -->
+                    <section class="calc-panel income-panel" aria-labelledby="income-title">
+
+                        <div class="input-section">
+
+                            <h2 id="income-title">ข้อมูลรายได้</h2>
+                            <p class="section-description">
+                                ประมาณรายรับจากปริมาณที่ขายและราคาต่อหน่วย
+                            </p>
+
+                            <div class="field-row">
+                                <label for="sale-amount">ปริมาณที่ขาย</label>
+
+                                <div class="input-box">
+                                    <input id="sale-amount" type="text" value="3,000" readonly>
+                                    <span>กก.</span>
+                                </div>
+                            </div>
+
+                            <div class="field-row">
+                                <label for="sale-price">ราคาขาย</label>
+
+                                <div class="input-box">
+                                    <input id="sale-price" type="text" value="12" readonly>
+                                    <span>บาท/กก.</span>
+                                </div>
+                            </div>
+
+                            <div class="information-box">
+                                <h3>รายรับยังไม่ใช่กำไร</h3>
+                                <p>
+                                    ต้องหักต้นทุนและค่าใช้จ่ายที่เกี่ยวข้องก่อน โดยราคา 12 บาท/กก. เป็นตัวเลขสมมติ ไม่ใช่ราคาตลาดปัจจุบัน
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <aside class="result-card" aria-label="ผลคำนวณรายได้">
+
+                            <span class="result-badge">ผลลัพธ์ตัวอย่าง</span>
+
+                            <div class="result-item">
+                                <span class="result-icon yellow" aria-hidden="true">
+                                    💰
+                                </span>
+
+                                <div>
+                                    <h3>รายรับรวมโดยประมาณ</h3>
+                                    <p class="result-number">
+                                        36,000 <span>บาท</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="result-caption">
+                                ก่อนหักต้นทุนและค่าใช้จ่าย
+                            </div>
+
+                            <div class="formula-box">
+                                <strong>วิธีคำนวณ</strong>
+                                <p>ปริมาณที่ขาย × ราคาต่อกิโลกรัม</p>
+                                <p>3,000 × 12 = 36,000 บาท</p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <div class="calculator-bottom">
+                <span aria-hidden="true">ⓘ</span>
+                <p>
+                    ตัวอย่างต้นทุนนี้รวมเฉพาะรายการที่แสดง หากใช้งานจริงควรนับค่าเช่าที่ดิน เครื่องจักร ขนส่ง และค่าใช้จ่ายอื่น ๆ ที่เกี่ยวข้องด้วย
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <span class="footer-logo-icon"><img src="img/icon.png" alt="icon"></span>
+
+                    <div>
+                        <strong>Agricultural</strong>
+                        <small>Knowledge</small>
+                    </div>
+                </div>
+
+                <p>
+                    แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>เมนูหลัก</h3>
+
+                <ul>
+                    <li><a href="home.html">หน้าหลัก</a></li>
+                    <li><a href="knowledge.html">ความรู้</a></li>
+                    <li><a href="tools.html">เครื่องมือ</a></li>
+                    <li><a href="quiz.html">แบบทดสอบ</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>ความรู้</h3>
+
+                <ul>
+                    <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
+                    <li><a href="water.html">การจัดการน้ำ</a></li>
+                    <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+                    <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
+                    <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>ติดต่อเรา</h3>
+
+                <p>
+                    ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-line" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+
+            <div class="footer-policy">
+                <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+                <span>·</span>
+                <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

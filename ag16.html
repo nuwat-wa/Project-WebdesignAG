@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agricultural Knowledge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/styles/ag16.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="img/icon.png" alt="icon">
+            </div>
+            <div class="brand-text">
+                <h1 class="title">Agricultural</h1>
+                <span class="subtitle">Knowledge</span>
+            </div>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">หน้าหลัก</a>
+
+            <div class="dropdown-hover">
+                <a href="#" class="dropdown-btn">ความรู้ <i class="fa-solid fa-caret-down"></i
+          ></a>
+
+                <div class="menu-level1">
+
+                    <div class="menu-item-has-children">
+                        <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
+                        <div class="menu-level2">
+                            <a href="ag4.html">เกษตรสมัยใหม่</a>
+                            <a href="ag5.html">ปลูกข้าว</a>
+                            <a href="ag6.html">พืชสวน</a>
+                            <a href="ag7.html">พืชไร่</a>
+                            <a href="ag8.html">ปลูกผัก</a>
+                            <a href="ag9.html">การเตรียมดิน</a>
+                            <a href="ag11.html">การเลือกปุ๋ย</a>
+                            <a href="ag12.html">โรคศัตรูพืช</a>
+                            <a href="ag16.html">ความเสี่ยง</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-has-children">
+                        <a href="#">ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
+              ></a>
+                        <div class="menu-level2">
+                            <a href="ag13.html">เทคโนโลยีการเกษตร</a>
+                            <a href="ag15.html">การวางแผนการผลิต</a>
+                            <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
+                            <a href="ag14.html">การจัดการที่ดิน</a>
+                        </div>
+                    </div>
+
+                    <a href="ag3.html">หลักการพอเพียง</a>
+                    <a href="ag17.html">เรื่องเล่า</a>
+                    <a href="ag18.html">บทความ</a>
+                </div>
+            </div>
+
+            <a href="ag19.html">เครื่องมือ</a>
+            <a href="ag20.html">แบบทดสอบ</a>
+            <a href="ag2.html" class="">เกี่ยวกับเรา</a>
+        </nav>
+    </header>
+
+    <main class="risk-page">
+
+        <section class="risk-panel" aria-labelledby="page-title">
+
+            <div class="page-heading">
+                <h1 id="page-title">ความเสี่ยงในการทำเกษตร</h1>
+                <p>
+                    เรียนรู้การประเมินความเสี่ยง และเตรียมแนวทางรับมือก่อนเกิดปัญหา
+                </p>
+            </div>
+
+
+            <div class="risk-layout">
+
+                <!-- ตารางความเสี่ยง -->
+                <section class="matrix-card" aria-labelledby="matrix-title">
+
+                    <div class="section-heading">
+                        <h2 id="matrix-title">
+                            <span class="heading-dot" aria-hidden="true"></span> ตารางระดับความเสี่ยง
+                        </h2>
+
+                        <span class="small-badge">ตัวอย่าง 3 × 3</span>
+                    </div>
+
+                    <p class="matrix-description">
+                        อ่านจากโอกาสเกิดและผลกระทบของแต่ละปัญหา
+                    </p>
+
+                    <div class="matrix-scroll">
+
+                        <div class="matrix-chart">
+
+                            <!-- ชื่อแกนแนวตั้ง -->
+                            <div class="vertical-title">ผลกระทบ</div>
+
+                            <!-- ระดับผลกระทบ -->
+                            <div class="impact-labels">
+                                <span>สูง</span>
+                                <span>กลาง</span>
+                                <span>ต่ำ</span>
+                            </div>
+
+                            <!-- ตาราง 9 ช่อง -->
+                            <div class="risk-grid">
+
+                                <!-- ผลกระทบสูง -->
+                                <div class="risk-cell risk-medium">
+                                    <span class="risk-tag">เฝ้าระวัง</span>
+                                    <p>ภัยธรรมชาติรุนแรง</p>
+                                </div>
+
+                                <div class="risk-cell risk-high">
+                                    <span class="risk-tag">วางแผนรับมือ</span>
+                                    <p>ราคาผลผลิตตกต่ำ</p>
+                                </div>
+
+                                <div class="risk-cell risk-critical">
+                                    <span class="risk-tag">เร่งจัดการ</span>
+                                    <p>ภัยแล้ง / ฝนทิ้งช่วง</p>
+                                </div>
+
+                                <!-- ผลกระทบปานกลาง -->
+                                <div class="risk-cell risk-low">
+                                    <span class="risk-tag">ติดตาม</span>
+                                    <p>เครื่องจักรชำรุด</p>
+                                </div>
+
+                                <div class="risk-cell risk-medium">
+                                    <span class="risk-tag">เฝ้าระวัง</span>
+                                    <p>โรคพืชและแมลง</p>
+                                </div>
+
+                                <div class="risk-cell risk-high">
+                                    <span class="risk-tag">วางแผนรับมือ</span>
+                                    <p>ต้นทุนปุ๋ยสูงขึ้น</p>
+                                </div>
+
+                                <!-- ผลกระทบต่ำ -->
+                                <div class="risk-cell risk-low">
+                                    <span class="risk-tag">ติดตาม</span>
+                                    <p>ขาดแรงงานชั่วคราว</p>
+                                </div>
+
+                                <div class="risk-cell risk-low">
+                                    <span class="risk-tag">ติดตาม</span>
+                                    <p>เมล็ดพันธุ์ส่งล่าช้า</p>
+                                </div>
+
+                                <div class="risk-cell risk-medium">
+                                    <span class="risk-tag">เฝ้าระวัง</span>
+                                    <p>วัชพืชในแปลง</p>
+                                </div>
+
+                            </div>
+
+                            <!-- ระดับโอกาสเกิด -->
+                            <div class="likelihood-labels">
+                                <span>ต่ำ</span>
+                                <span>ปานกลาง</span>
+                                <span>สูง</span>
+                            </div>
+
+                            <div class="horizontal-title">โอกาสเกิด →</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="risk-legend" aria-label="คำอธิบายสี">
+                        <span><i class="legend-low"></i>เสี่ยงต่ำ</span>
+                        <span><i class="legend-medium"></i>เสี่ยงปานกลาง</span>
+                        <span><i class="legend-high"></i>เสี่ยงสูง</span>
+                        <span><i class="legend-critical"></i>เสี่ยงสูงมาก</span>
+                    </div>
+
+                    <p class="matrix-note">
+                        ตำแหน่งของปัญหาเป็นเพียงตัวอย่าง ระดับความเสี่ยงจริงขึ้นอยู่กับพื้นที่ ฤดูกาล และการจัดการของแต่ละแปลง
+                    </p>
+
+                </section>
+
+
+                <!-- วิธีรับมือ -->
+                <section class="response-card" aria-labelledby="response-title">
+
+                    <div class="section-heading">
+                        <h2 id="response-title">วิธีรับมือ</h2>
+                        <span class="small-badge">4 แนวทาง</span>
+                    </div>
+
+                    <div class="response-list">
+
+                        <article class="response-item">
+                            <span class="check-icon" aria-hidden="true">✓</span>
+
+                            <div>
+                                <h3>จัดระบบน้ำ</h3>
+                                <p>
+                                    สำรวจแหล่งน้ำสำรอง ตรวจอุปกรณ์ และวางแผนใช้น้ำให้เหมาะกับพืช
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="response-item">
+                            <span class="check-icon" aria-hidden="true">✓</span>
+
+                            <div>
+                                <h3>เตรียมทางเลือกการปลูก</h3>
+                                <p>
+                                    พิจารณาพืชที่เหมาะกับฤดูกาล และน้ำที่มี ก่อนทดลองปลูกในพื้นที่เล็ก
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="response-item">
+                            <span class="check-icon" aria-hidden="true">✓</span>
+
+                            <div>
+                                <h3>ศึกษาประกันภัยพืชผล</h3>
+                                <p>
+                                    ตรวจสอบความคุ้มครอง ข้อยกเว้น และเงื่อนไขของโครงการก่อนตัดสินใจ
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="response-item">
+                            <span class="check-icon" aria-hidden="true">✓</span>
+
+                            <div>
+                                <h3>กระจายความเสี่ยง</h3>
+                                <p>
+                                    พิจารณาปลูกพืชหลายชนิด หรือแบ่งรอบปลูกตามทรัพยากรที่ดูแลไหว
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                    <details class="guide-details">
+
+                        <summary>อ่านแนวทางเพิ่มเติม <span>＋</span></summary>
+
+                        <div class="guide-content">
+                            <ol>
+                                <li>จดปัญหาที่เคยเกิดขึ้นในแปลง</li>
+                                <li>ประเมินโอกาสเกิดและผลกระทบ</li>
+                                <li>เริ่มเตรียมรับมือเรื่องที่เสี่ยงสูงก่อน</li>
+                                <li>ทบทวนแผนเมื่อฤดูกาลหรือต้นทุนเปลี่ยน</li>
+                            </ol>
+                        </div>
+
+                    </details>
+
+                </section>
+
+            </div>
+
+
+            <!-- ส่วนล่าง -->
+            <div class="bottom-layout">
+
+                <section class="principle-card">
+
+                    <span class="principle-badge">◎ หลักคิดสำคัญ</span>
+
+                    <h2>
+                        ประเมินความเสี่ยงอย่างสม่ำเสมอ<br> เพื่อวางแผนได้รอบคอบขึ้น
+                    </h2>
+
+                    <p>
+                        รู้ข้อจำกัดของแปลง เตรียมทางเลือก และปรับแผนให้เข้ากับสถานการณ์
+                    </p>
+
+                </section>
+
+
+                <!-- กดเปิดรายการสำรวจ ไม่มีการคำนวณคะแนน -->
+                <details class="assessment-card">
+
+                    <summary>
+
+                        <span class="assessment-icon" aria-hidden="true">
+                            🛡
+                        </span>
+
+                        <span class="assessment-text">
+                            <small>เริ่มจากแปลงของคุณ</small>
+                            <strong>สำรวจความเสี่ยง<br>ก่อนเริ่มเพาะปลูก</strong>
+                        </span>
+
+                        <span class="assessment-arrow" aria-hidden="true">
+                            ↓
+                        </span>
+
+                    </summary>
+
+                    <div class="assessment-content">
+
+                        <p>ลองตรวจสอบสิ่งที่คุณเตรียมไว้แล้ว</p>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>มีข้อมูลแหล่งน้ำและน้ำสำรอง</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>ตรวจแปลงและติดตามโรคพืชสม่ำเสมอ</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>จดต้นทุนและเตรียมค่าใช้จ่ายสำรอง</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>มีแผนรับมือเมื่อผลผลิตขายไม่ได้ตามคาด</span>
+                        </label>
+
+                        <p class="assessment-note">
+                            ใช้ช่วยทบทวนเบื้องต้น รายการที่เลือกไม่ได้ถูกบันทึกไว้ในระบบ
+                        </p>
+
+                    </div>
+
+                </details>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <span class="footer-logo-icon"><img src="img/icon.png" alt="icon"></span>
+
+                    <div>
+                        <strong>Agricultural</strong>
+                        <small>Knowledge</small>
+                    </div>
+                </div>
+
+                <p>
+                    แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>เมนูหลัก</h3>
+
+                <ul>
+                    <li><a href="home.html">หน้าหลัก</a></li>
+                    <li><a href="knowledge.html">ความรู้</a></li>
+                    <li><a href="tools.html">เครื่องมือ</a></li>
+                    <li><a href="quiz.html">แบบทดสอบ</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>ความรู้</h3>
+
+                <ul>
+                    <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
+                    <li><a href="water.html">การจัดการน้ำ</a></li>
+                    <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+                    <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
+                    <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>ติดต่อเรา</h3>
+
+                <p>
+                    ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-line" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+
+            <div class="footer-policy">
+                <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+                <span>·</span>
+                <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
