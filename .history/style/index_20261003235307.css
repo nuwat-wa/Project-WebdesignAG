@@ -492,25 +492,16 @@ body {
 }
 
 .card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 18px;
-  color: #fff;
-  background: #064e3b;
-  border-radius: 10px;
+  color: #059669;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
-  transition: 0.25s;
+  transition: color 0.2s;
 }
 
 .card-link:hover {
-  color: #fff;
-  background: #047857;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(5, 150, 105, 0.3);
+  color: #047857;
 }
 
 /* philosophy banner */
@@ -727,7 +718,7 @@ body {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  .nav-links {
+   .nav-links {
     position: absolute;
     top: 60px;
     left: 0;
@@ -970,10 +961,5 @@ body {
   .footer-policy {
     flex-wrap: wrap;
     gap: 10px;
-  }
-
-    .card-link {
-    padding: 7px 14px;
-    font-size: 12px;
   }
 }

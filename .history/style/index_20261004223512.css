@@ -497,7 +497,7 @@ body {
   gap: 6px;
   padding: 8px 18px;
   color: #fff;
-  background: #064e3b;
+  background: #059669;
   border-radius: 10px;
   font-size: 13px;
   font-weight: 600;
@@ -971,7 +971,6 @@ body {
     flex-wrap: wrap;
     gap: 10px;
   }
-
     .card-link {
     padding: 7px 14px;
     font-size: 12px;
