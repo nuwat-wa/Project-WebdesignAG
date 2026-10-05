@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agricultural Knowledge</title>
+
+    <title>การจัดการที่ดิน</title>
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style/ag8.css" />
+
+    <link rel="stylesheet" href="style/ag9.css" />
   </head>
 
   <body>
@@ -22,9 +25,8 @@
         <div class="logo-icon">
           <img src="img/icon.png" alt="icon" />
         </div>
-
         <div class="brand-text">
-          <h1 class="title">Agricultural</h1>
+          <div class="title">Agricultural</div>
           <span class="subtitle">Knowledge</span>
         </div>
       </div>
@@ -41,14 +43,13 @@
         <a href="index.html">หน้าหลัก</a>
 
         <div class="dropdown-hover">
-          <a href="#" class="dropdown-btn active">
-            ความรู้ <i class="fa-solid fa-caret-down"></i>
-          </a>
+          <a href="#" class="dropdown-btn active"
+            >ความรู้ <i class="fa-solid fa-caret-down"></i
+          ></a>
 
           <div class="menu-level1">
             <div class="menu-item-has-children">
-              <a href="#"> มือใหม่ <i class="fa-solid fa-caret-right"></i> </a>
-
+              <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
               <div class="menu-level2">
                 <a href="ag4.html">เกษตรสมัยใหม่</a>
                 <a href="ag5.html">ปลูกข้าว</a>
@@ -63,10 +64,9 @@
             </div>
 
             <div class="menu-item-has-children">
-              <a href="#">
-                ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i>
-              </a>
-
+              <a href="#"
+                >ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
+              ></a>
               <div class="menu-level2">
                 <a href="ag13.html">เทคโนโลยีการเกษตร</a>
                 <a href="ag15.html">การวางแผนการผลิต</a>
@@ -89,218 +89,130 @@
 
     <main class="main-content">
       <div class="container">
-        <div class="veg-system">
-          <input type="radio" name="veg-tab" id="tab-kale" checked />
+        <div class="content-card">
+          <h1 class="main-title">การจัดการดินอย่างถูกวิธี</h1>
+          <p class="plant-card-desc">
+            เคล็ดลับการบำรุงและปรับสภาพดิน
+            เพื่อสร้างรากฐานที่แข็งแรงให้พืชเติบโตอย่างยั่งยืน
+          </p>
 
-          <div class="hero-section-grid">
-            <div class="hero-display">
-              <h1 class="main-title">ปลูกผักอย่างไรให้ได้ผลดี</h1>
+          <div class="grid-layout">
+            <div class="steps-timeline">
+              <div class="step-item">
+                <div class="step-number num-green">1</div>
 
-              <p class="plant-card-desc">
-                เคล็ดลับการดูแลพืชผักสวนครัวอย่างถูกวิธี เพื่อให้ได้ผักใบเขียวสด
-                ผลผลิตดก และโตไวทันใจ
-              </p>
+                <div class="step-box">
+                  <div class="step-header">
+                    <h2 class="step-title">ตรวจดิน</h2>
+                    <span class="step-badge badge-light-green">
+                      สำคัญเป็นอันดับแรก
+                    </span>
+                  </div>
 
-              <div class="image-preview-wrapper">
-                <div class="preview-card preview-kale">
-                  <img src="img/kana.png" alt="คะน้า" />
-                  <span class="img-caption">
-                    คะน้า – ผักใบเขียวปลูกง่าย ทนทาน
-                  </span>
+                  <p class="step-desc">
+                    ตรวจวัดค่ากรด-ด่าง (pH) และปริมาณธาตุอาหารเดิมก่อนเริ่ม
+                  </p>
                 </div>
               </div>
 
-              <div class="veg-info info-kale">
-                <h3>คะน้า</h3>
+              <div class="step-item">
+                <div class="step-number num-green">2</div>
 
-                <p>
-                  ผักใบเขียวที่ปลูกง่าย ทนทาน ให้ผลผลิตดี ปลูกได้ตลอดปี
-                  แต่เจริญเติบโตดีที่สุดในช่วงอากาศเย็น
-                </p>
+                <div class="step-box">
+                  <div class="step-header">
+                    <h2 class="step-title">ปรับปรุงดิน</h2>
+                    <span class="step-badge badge-green"> ปรับสภาพ </span>
+                  </div>
 
-                <ul class="info-facts">
-                  <li>
-                    <i class="fa-solid fa-clock"></i>
-                    <span>อายุเก็บเกี่ยว</span>
-                    <strong>ประมาณ 45–60 วัน</strong>
-                  </li>
+                  <p class="step-desc">
+                    เติมปูนขาวหรือยิปซัม
+                    หรือใส่อินทรียวัตถุเพื่อปรับโครงสร้างดิน
+                  </p>
+                </div>
+              </div>
 
-                  <li>
-                    <i class="fa-solid fa-sun"></i>
-                    <span>ฤดูที่เหมาะ</span>
-                    <strong>ฤดูหนาว</strong>
-                  </li>
+              <div class="step-item">
+                <div class="step-number num-green">3</div>
 
-                  <li>
-                    <i class="fa-solid fa-ruler-horizontal"></i>
-                    <span>ระยะปลูก</span>
-                    <strong>20–30 ซม.</strong>
-                  </li>
+                <div class="step-box">
+                  <div class="step-header">
+                    <h2 class="step-title">เลือกปุ๋ย</h2>
+                    <span class="step-badge badge-light-green">
+                      ให้โภชนาการ
+                    </span>
+                  </div>
 
-                  <li>
-                    <i class="fa-solid fa-droplet"></i>
-                    <span>การให้น้ำ</span>
-                    <strong>เช้า–เย็น ให้ดินชุ่ม</strong>
-                  </li>
-                </ul>
+                  <p class="step-desc">
+                    เลือกใช้ปุ๋ยเคมี ปุ๋ยคอก
+                    หรือปุ๋ยหมักตามความต้องการของพืชที่ปลูก
+                  </p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number num-green">4</div>
+
+                <div class="step-box">
+                  <div class="step-header">
+                    <h2 class="step-title">เตรียมแปลง</h2>
+                    <span class="step-badge badge-green"> โครงสร้างแปลง </span>
+                  </div>
+
+                  <p class="step-desc">
+                    ไถพรวนดิน
+                    ยกร้องเพิ่มการระบายน้ำและย่อยย่อยอาหารระบายน้ำได้ดี
+                  </p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number num-green">5</div>
+
+                <div class="step-box">
+                  <div class="step-header">
+                    <h2 class="step-title">พร้อมปลูก</h2>
+                    <span class="step-badge badge-light-green">
+                      ขั้นตอนสุดท้าย
+                    </span>
+                  </div>
+
+                  <p class="step-desc">
+                    ดินร่วนซุย ค่าความชื้นเหมาะสม พร้อมลงต้นกล้าหรือเมล็ดพันธุ์
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="sidebar-menu">
-              <h2 class="sidebar-title">ผักที่น่าสนใจ</h2>
+            <div class="image-banner">
+              <img src="img/dinn.png" alt="การจัดการดิน" />
 
-              <div class="veg-list">
-                <label for="tab-kale" class="veg-item label-kale">
-                  <div class="thumb-box">
-                    <img src="img/kana.png" alt="คะน้า" />
-                  </div>
+              <div class="banner-overlay">
+                <p class="banner-quote">
+                  “ดินดี คือรากฐาน<br />
+                  ของผลผลิตที่ยั่งยืน”
+                </p>
 
-                  <div class="veg-text">
-                    <span class="veg-name">คะน้า</span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-clock"></i>
-                      เก็บเกี่ยว 45–60 วัน
-                    </span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-sun"></i>
-                      ฤดูหนาว
-                    </span>
-                  </div>
-
-                  <span class="veg-level lv-2">ง่าย</span>
-                </label>
-
-                <label for="tab-cabbage" class="veg-item label-cabbage">
-                  <div class="thumb-box">
-                    <img src="img/kad.png" alt="ผักกาด" />
-                  </div>
-
-                  <div class="veg-text">
-                    <span class="veg-name">ผักกาด</span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-clock"></i>
-                      เก็บเกี่ยว 40–50 วัน
-                    </span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-sun"></i>
-                      ปลายฝน–ฤดูหนาว
-                    </span>
-                  </div>
-
-                  <span class="veg-level lv-2">ง่าย</span>
-                </label>
-
-                <label
-                  for="tab-morning-glory"
-                  class="veg-item label-morning-glory"
-                >
-                  <div class="thumb-box">
-                    <img src="img/bung.png" alt="ผักบุ้ง" />
-                  </div>
-
-                  <div class="veg-text">
-                    <span class="veg-name">ผักบุ้ง</span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-clock"></i>
-                      เก็บเกี่ยว 20–30 วัน
-                    </span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-sun"></i>
-                      ปลูกได้ตลอดปี
-                    </span>
-                  </div>
-
-                  <span class="veg-level lv-1">ง่ายมาก</span>
-                </label>
-
-                <label for="tab-choy-sum" class="veg-item label-choy-sum">
-                  <div class="thumb-box">
-                    <img src="img/tung.png" alt="กวางตุ้ง" />
-                  </div>
-
-                  <div class="veg-text">
-                    <span class="veg-name">กวางตุ้ง</span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-clock"></i>
-                      เก็บเกี่ยว 30–40 วัน
-                    </span>
-
-                    <span class="veg-meta">
-                      <i class="fa-solid fa-sun"></i>
-                      ฤดูหนาว
-                    </span>
-                  </div>
-
-                  <span class="veg-level lv-2">ง่าย</span>
-                </label>
+                <div class="quote-line"></div>
               </div>
+            </div>
+          </div>
+
+          <div class="callout-banner">
+            <div class="callout-icon">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+
+            <div class="callout-text">
+              <strong class="callout-title">
+                ต้องการผู้เชี่ยวชาญช่วยวิเคราะห์?
+              </strong>
+
+              <span class="callout-sub">
+                ส่งตัวอย่างดินเพื่อรับรายงานผลวิเคราะห์ฟรี
+              </span>
             </div>
           </div>
         </div>
-
-        <section class="tips-section">
-          <h2 class="section-title">เคล็ดลับการปลูกผัก</h2>
-
-          <div class="tips-grid">
-            <div class="tip-card">
-              <div class="tip-icon-box">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-
-              <span class="tip-label">เลือกพื้นที่</span>
-
-              <p class="tip-desc">
-                เลือกที่โล่งแจ้ง ได้รับแสงแดดอย่างน้อย 5–6 ชั่วโมงต่อวัน
-                และใกล้แหล่งน้ำ
-              </p>
-            </div>
-
-            <div class="tip-card">
-              <div class="tip-icon-box">
-                <i class="fa-solid fa-mountain"></i>
-              </div>
-
-              <span class="tip-label">เตรียมดิน</span>
-
-              <p class="tip-desc">
-                พรวนดินให้ร่วนซุย ผสมปุ๋ยคอกหรือปุ๋ยหมัก
-                และยกแปลงให้น้ำไม่ท่วมขัง
-              </p>
-            </div>
-
-            <div class="tip-card">
-              <div class="tip-icon-box">
-                <i class="fa-solid fa-droplet"></i>
-              </div>
-
-              <span class="tip-label">ให้น้ำ</span>
-
-              <p class="tip-desc">
-                รดน้ำช่วงเช้าและเย็น ให้ดินชุ่มแต่ไม่แฉะ
-                เพื่อลดการเกิดโรครากเน่า
-              </p>
-            </div>
-
-            <div class="tip-card">
-              <div class="tip-icon-box">
-                <i class="fa-solid fa-seedling"></i>
-              </div>
-
-              <span class="tip-label">ดูแลรักษา</span>
-
-              <p class="tip-desc">
-                ถอนวัชพืช ตรวจแมลงสม่ำเสมอ และเสริมปุ๋ยตามช่วงการเจริญเติบโต
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
 
@@ -308,9 +220,9 @@
       <div class="footer-top">
         <div class="footer-about">
           <div class="footer-logo">
-            <span class="footer-logo-icon">
-              <img src="img/icon.png" alt="icon" />
-            </span>
+            <span class="footer-logo-icon"
+              ><img src="img/icon.png" alt="icon"
+            /></span>
 
             <div>
               <strong>Agricultural</strong>
@@ -329,9 +241,9 @@
 
           <ul>
             <li><a href="index.html">หน้าหลัก</a></li>
-            <li><a href="ag5.html">ความรู้</a></li>
-            <li><a href="tools.html">เครื่องมือ</a></li>
-            <li><a href="quiz.html">แบบทดสอบ</a></li>
+            <li><a href="ag4.html">ความรู้</a></li>
+            <li><a href="ag19.html">เครื่องมือ</a></li>
+            <li><a href="ag20.html">แบบทดสอบ</a></li>
             <li><a href="ag2.html">เกี่ยวกับเรา</a></li>
           </ul>
         </div>
@@ -342,7 +254,7 @@
           <ul>
             <li><a href="ag4.html">เกษตรยุคใหม่</a></li>
             <li><a href="ag10.html">การจัดการน้ำ</a></li>
-            <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+            <li><a href="ag13.html">เทคโนโลยีโดรน</a></li>
             <li><a href="ag3.html">3 ห่วง 2 เงื่อนไข</a></li>
             <li><a href="ag7.html">พืชเศรษฐกิจ</a></li>
           </ul>
@@ -357,17 +269,15 @@
           </p>
 
           <div class="footer-social">
-            <a href="#" aria-label="Facebook">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-
-            <a href="#" class="social-line" aria-label="LINE">
-              <i class="fa-brands fa-line"></i>
-            </a>
-
-            <a href="#" aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="social-line" aria-label="LINE"
+              ><i class="fa-brands fa-line"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
           </div>
         </div>
       </div>
