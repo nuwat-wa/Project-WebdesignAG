@@ -1,569 +1,740 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>ค้นหาโรคและศัตรูพืช</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/ag12.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/ag12.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="logo">
-            <div class="logo-icon">
-                <img src="img/icon.png" alt="icon">
-            </div>
-            <div class="brand-text">
-                <h1 class="title">Agricultural</h1>
-                <span class="subtitle">Knowledge</span>
-            </div>
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="img/icon.png" alt="icon" />
         </div>
+        <div class="brand-text">
+          <h1 class="title">Agricultural</h1>
+          <span class="subtitle">Knowledge</span>
+        </div>
+      </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-        <label for="menu-toggle" class="hamburger">
+      <label for="menu-toggle" class="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </label>
-        <nav class="nav-links">
-            <a href="index.html">หน้าหลัก</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
 
-            <div class="dropdown-hover">
-                <a href="#" class="dropdown-btn active">ความรู้ <i class="fa-solid fa-caret-down"></i
+        <div class="dropdown-hover">
+          <a href="#" class="dropdown-btn active"
+            >ความรู้ <i class="fa-solid fa-caret-down"></i
           ></a>
 
-                <div class="menu-level1">
-
-                    <div class="menu-item-has-children">
-                        <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
-                        <div class="menu-level2">
-                            <a href="ag4.html">เกษตรสมัยใหม่</a>
-                            <a href="ag5.html">ปลูกข้าว</a>
-                            <a href="ag6.html">พืชสวน</a>
-                            <a href="ag7.html">พืชไร่</a>
-                            <a href="ag8.html">ปลูกผัก</a>
-                            <a href="ag9.html">การเตรียมดิน</a>
-                            <a href="ag11.html">การเลือกปุ๋ย</a>
-                            <a href="ag12.html">โรคศัตรูพืช</a>
-                            <a href="ag16.html">ความเสี่ยง</a>
-                        </div>
-                    </div>
-
-                    <div class="menu-item-has-children">
-                        <a href="#">ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
-              ></a>
-                        <div class="menu-level2">
-                            <a href="ag13.html">เทคโนโลยีการเกษตร</a>
-                            <a href="ag15.html">การวางแผนการผลิต</a>
-                            <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
-                            <a href="ag14.html">การจัดการที่ดิน</a>
-                        </div>
-                    </div>
-
-                    <a href="ag3.html">หลักการพอเพียง</a>
-                    <a href="ag17.html">เรื่องเล่า</a>
-                    <a href="ag18.html">บทความ</a>
-                </div>
+          <div class="menu-level1">
+            <div class="menu-item-has-children">
+              <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
+              <div class="menu-level2">
+                <a href="ag4.html">เกษตรสมัยใหม่</a>
+                <a href="ag5.html">ปลูกข้าว</a>
+                <a href="ag6.html">พืชสวน</a>
+                <a href="ag7.html">พืชไร่</a>
+                <a href="ag8.html">ปลูกผัก</a>
+                <a href="ag9.html">การเตรียมดิน</a>
+                <a href="ag11.html">การเลือกปุ๋ย</a>
+                <a href="ag12.html">โรคศัตรูพืช</a>
+                <a href="ag16.html">ความเสี่ยง</a>
+              </div>
             </div>
 
-            <a href="ag19.html">เครื่องมือ</a>
-            <a href="ag20.html">แบบทดสอบ</a>
-            <a href="ag2.html" class="">เกี่ยวกับเรา</a>
-        </nav>
+            <div class="menu-item-has-children">
+              <a href="#"
+                >ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
+              ></a>
+              <div class="menu-level2">
+                <a href="ag13.html">เทคโนโลยีการเกษตร</a>
+                <a href="ag15.html">การวางแผนการผลิต</a>
+                <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
+                <a href="ag14.html">การจัดสรรที่ดิน</a>
+              </div>
+            </div>
+
+            <a href="ag3.html">หลักการพอเพียง</a>
+            <a href="ag17.html">เรื่องเล่า</a>
+            <a href="ag18.html">บทความ</a>
+          </div>
+        </div>
+
+        <a href="ag19.html">เครื่องมือ</a>
+        <a href="ag20.html">แบบทดสอบ</a>
+        <a href="ag2.html" class="">เกี่ยวกับเรา</a>
+      </nav>
     </header>
 
     <main class="pest-page">
-        <h1>ค้นหาโรคและศัตรูพืช</h1>
+      <h1>ค้นหาโรคและศัตรูพืช</h1>
 
-        <p class="description">
-            เรียนรู้อาการผิดปกติของพืช โรคพืช และแมลงศัตรูพืช พร้อมแนวทางดูแลและป้องกันเบื้องต้น
-        </p>
+      <p class="description">
+        เรียนรู้อาการผิดปกติของพืช โรคพืช และแมลงศัตรูพืช
+        พร้อมแนวทางดูแลและป้องกันเบื้องต้น
+      </p>
 
-        <!-- ปุ่มประเภท: ยังไม่ได้เพิ่มระบบกรอง -->
-        <div class="filters">
-            <button type="button" class="filter-button active">
-                ทั้งหมด
-            </button>
+      <!-- ปุ่มประเภท: ยังไม่ได้เพิ่มระบบกรอง -->
+      <div class="filters">
+        <button type="button" class="filter-button active">ทั้งหมด</button>
 
-            <button type="button" class="filter-button">
-                โรค
-            </button>
+        <button type="button" class="filter-button">โรค</button>
 
-            <button type="button" class="filter-button">
-                แมลง
-            </button>
+        <button type="button" class="filter-button">แมลง</button>
 
-            <button type="button" class="filter-button">
-                วัชพืช
-            </button>
-        </div>
+        <button type="button" class="filter-button">วัชพืช</button>
+      </div>
 
-        <!-- การ์ด -->
-        <div class="pest-list">
-            <div class="row align-items-start g-4">
+      <!-- การ์ด -->
+      <div class="pest-list">
+        <div class="row align-items-start g-4">
+          <!-- การ์ด 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card pest-card">
+              <img src="img/เพลี้ยไฟ.jpg" class="card-img-top" alt="เพลี้ยไฟ" />
 
-                <!-- การ์ด 1 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card pest-card">
-                        <img src="img/เพลี้ยไฟ.jpg" class="card-img-top" alt="เพลี้ยไฟ">
+              <div class="card-body">
+                <h2 class="card-title">เพลี้ยไฟ</h2>
 
-                        <div class="card-body">
-                            <h2 class="card-title">เพลี้ยไฟ</h2>
+                <p class="card-text">
+                  แมลงศัตรูพืชในพืชผักและไม้ดอก
+                  ทำให้ใบมีรอยสีเงินและยอดอ่อนหงิกงอ
+                </p>
 
-                            <p class="card-text">
-                                แมลงศัตรูพืชในพืชผักและไม้ดอก ทำให้ใบมีรอยสีเงินและยอดอ่อนหงิกงอ
-                            </p>
-
-                            <button type="button" class="read-button stretched-link" data-bs-toggle="modal" data-bs-target="#thripsModal" aria-label="อ่านรายละเอียดเพลี้ยไฟ">
-                                อ่านรายละเอียด →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- การ์ด 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card pest-card">
-                        <img src="img/แมลงหวี่ขาว.jpeg" class="card-img-top" alt="แมลงหวี่ขาว">
-
-                        <div class="card-body">
-                            <h2 class="card-title">แมลงหวี่ขาว</h2>
-
-                            <p class="card-text">
-                                แมลงสีขาวเล็ก ๆ เกาะอยู่ใต้ใบ พบได้ในพืชผักและไม้ประดับ
-                            </p>
-
-                            <button type="button" class="read-button stretched-link" data-bs-toggle="modal" data-bs-target="#whiteflyModal" aria-label="อ่านรายละเอียดแมลงหวี่ขาว">
-                                อ่านรายละเอียด →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- การ์ด 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card pest-card">
-                        <img src="img/โรคใบจุด.jpg" class="card-img-top" alt="โรคใบจุด">
-
-                        <div class="card-body">
-                            <h2 class="card-title">โรคใบจุด</h2>
-
-                            <p class="card-text">
-                                ใบมีจุดสีน้ำตาลหรือดำ ลักษณะอาการแตกต่างตามชนิดพืชและสาเหตุ
-                            </p>
-
-                            <button type="button" class="read-button stretched-link" data-bs-toggle="modal" data-bs-target="#leafSpotModal" aria-label="อ่านรายละเอียดโรคใบจุด">
-                                อ่านรายละเอียด →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- การ์ด 4 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card pest-card">
-                        <img src="img/หนอนชอนใบ.jpg" class="card-img-top" alt="หนอนชอนใบ">
-
-                        <div class="card-body">
-                            <h2 class="card-title">หนอนชอนใบ</h2>
-
-                            <p class="card-text">
-                                ใบมีรอยเส้นคดเคี้ยวสีอ่อน พบได้ในมะเขือเทศและผักตระกูลกะหล่ำ
-                            </p>
-
-                            <button type="button" class="read-button stretched-link" data-bs-toggle="modal" data-bs-target="#leafMinerModal" aria-label="อ่านรายละเอียดหนอนชอนใบ">
-                                อ่านรายละเอียด →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- การ์ด 5 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card pest-card">
-                        <img src="img/โรคใบไหม้.jpeg" class="card-img-top" alt="โรคใบไหม้">
-
-                        <div class="card-body">
-                            <h2 class="card-title">โรคใบไหม้</h2>
-
-                            <p class="card-text">
-                                แผลบนใบขยายรวมกันเป็นบริเวณกว้าง ควรตรวจชนิดพืชและสาเหตุร่วมกัน
-                            </p>
-
-                            <button type="button" class="read-button stretched-link" data-bs-toggle="modal" data-bs-target="#leafBlightModal" aria-label="อ่านรายละเอียดโรคใบไหม้">
-                                อ่านรายละเอียด →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- การ์ด 6 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card pest-card">
-                        <img src="img/หนอนใยผัก.jpg" class="card-img-top" alt="หนอนใยผัก">
-
-                        <div class="card-body">
-                            <h2 class="card-title">หนอนใยผัก</h2>
-
-                            <p class="card-text">
-                                กัดกินใบจนบางใสหรือเป็นรู พบในคะน้า กะหล่ำ และผักกาด
-                            </p>
-
-                            <button type="button" class="read-button stretched-link" data-bs-toggle="modal" data-bs-target="#diamondbackModal" aria-label="อ่านรายละเอียดหนอนใยผัก">
-                                อ่านรายละเอียด →
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
+                <button
+                  type="button"
+                  class="read-button stretched-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#thripsModal"
+                  aria-label="อ่านรายละเอียดเพลี้ยไฟ"
+                >
+                  อ่านรายละเอียด →
+                </button>
+              </div>
             </div>
+          </div>
+
+          <!-- การ์ด 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card pest-card">
+              <img
+                src="img/แมลงหวี่ขาว.jpeg"
+                class="card-img-top"
+                alt="แมลงหวี่ขาว"
+              />
+
+              <div class="card-body">
+                <h2 class="card-title">แมลงหวี่ขาว</h2>
+
+                <p class="card-text">
+                  แมลงสีขาวเล็ก ๆ เกาะอยู่ใต้ใบ พบได้ในพืชผักและไม้ประดับ
+                </p>
+
+                <button
+                  type="button"
+                  class="read-button stretched-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#whiteflyModal"
+                  aria-label="อ่านรายละเอียดแมลงหวี่ขาว"
+                >
+                  อ่านรายละเอียด →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- การ์ด 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card pest-card">
+              <img src="img/โรคใบจุด.jpg" class="card-img-top" alt="โรคใบจุด" />
+
+              <div class="card-body">
+                <h2 class="card-title">โรคใบจุด</h2>
+
+                <p class="card-text">
+                  ใบมีจุดสีน้ำตาลหรือดำ ลักษณะอาการแตกต่างตามชนิดพืชและสาเหตุ
+                </p>
+
+                <button
+                  type="button"
+                  class="read-button stretched-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#leafSpotModal"
+                  aria-label="อ่านรายละเอียดโรคใบจุด"
+                >
+                  อ่านรายละเอียด →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- การ์ด 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card pest-card">
+              <img
+                src="img/หนอนชอนใบ.jpg"
+                class="card-img-top"
+                alt="หนอนชอนใบ"
+              />
+
+              <div class="card-body">
+                <h2 class="card-title">หนอนชอนใบ</h2>
+
+                <p class="card-text">
+                  ใบมีรอยเส้นคดเคี้ยวสีอ่อน พบได้ในมะเขือเทศและผักตระกูลกะหล่ำ
+                </p>
+
+                <button
+                  type="button"
+                  class="read-button stretched-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#leafMinerModal"
+                  aria-label="อ่านรายละเอียดหนอนชอนใบ"
+                >
+                  อ่านรายละเอียด →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- การ์ด 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card pest-card">
+              <img
+                src="img/โรคใบไหม้.jpeg"
+                class="card-img-top"
+                alt="โรคใบไหม้"
+              />
+
+              <div class="card-body">
+                <h2 class="card-title">โรคใบไหม้</h2>
+
+                <p class="card-text">
+                  แผลบนใบขยายรวมกันเป็นบริเวณกว้าง
+                  ควรตรวจชนิดพืชและสาเหตุร่วมกัน
+                </p>
+
+                <button
+                  type="button"
+                  class="read-button stretched-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#leafBlightModal"
+                  aria-label="อ่านรายละเอียดโรคใบไหม้"
+                >
+                  อ่านรายละเอียด →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- การ์ด 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card pest-card">
+              <img
+                src="img/หนอนใยผัก.jpg"
+                class="card-img-top"
+                alt="หนอนใยผัก"
+              />
+
+              <div class="card-body">
+                <h2 class="card-title">หนอนใยผัก</h2>
+
+                <p class="card-text">
+                  กัดกินใบจนบางใสหรือเป็นรู พบในคะน้า กะหล่ำ และผักกาด
+                </p>
+
+                <button
+                  type="button"
+                  class="read-button stretched-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#diamondbackModal"
+                  aria-label="อ่านรายละเอียดหนอนใยผัก"
+                >
+                  อ่านรายละเอียด →
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
+    <div
+      class="modal fade pest-modal"
+      id="thripsModal"
+      tabindex="-1"
+      aria-labelledby="thripsTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="thripsTitle">เพลี้ยไฟ</h2>
 
-    <div class="modal fade pest-modal" id="thripsModal" tabindex="-1" aria-labelledby="thripsTitle" aria-hidden="true">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="ปิด"
+            ></button>
+          </div>
 
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+          <div class="modal-body">
+            <img src="img/เพลี้ยไฟ.jpg" class="popup-image" alt="เพลี้ยไฟ" />
 
-                <div class="modal-header">
-                    <h2 class="modal-title" id="thripsTitle">เพลี้ยไฟ</h2>
+            <p class="popup-category">แมลงศัตรูพืช · พืชผัก / ไม้ดอก</p>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
-                </div>
+            <h3>สังเกตอาการ</h3>
+            <p>
+              ใบ ดอก หรือผลมีรอยสีเงิน ยอดอ่อนอาจหงิกงอหรือผิดรูป
+              ควรตรวจหาแมลงร่วมกับอาการที่พบ
+            </p>
 
-                <div class="modal-body">
-                    <img src="img/เพลี้ยไฟ.jpg" class="popup-image" alt="เพลี้ยไฟ">
+            <h3>ดูแลเบื้องต้นอย่างไร</h3>
+            <ul>
+              <li>สำรวจยอดอ่อน ดอก และใต้ใบ</li>
+              <li>เคาะใบเหนือกระดาษสีขาวเพื่อดูแมลง</li>
+              <li>รักษาแมลงศัตรูธรรมชาติ</li>
+            </ul>
 
-                    <p class="popup-category">แมลงศัตรูพืช · พืชผัก / ไม้ดอก</p>
+            <h3>ลดโอกาสเกิดซ้ำ</h3>
+            <p>
+              ดูแลพืชให้แข็งแรง ไม่ให้ปุ๋ยไนโตรเจนมากเกินไป
+              และติดตามอาการที่ยอดอ่อนอย่างสม่ำเสมอ
+            </p>
 
-                    <h3>สังเกตอาการ</h3>
-                    <p>
-                        ใบ ดอก หรือผลมีรอยสีเงิน ยอดอ่อนอาจหงิกงอหรือผิดรูป ควรตรวจหาแมลงร่วมกับอาการที่พบ
-                    </p>
-
-                    <h3>ดูแลเบื้องต้นอย่างไร</h3>
-                    <ul>
-                        <li>สำรวจยอดอ่อน ดอก และใต้ใบ</li>
-                        <li>เคาะใบเหนือกระดาษสีขาวเพื่อดูแมลง</li>
-                        <li>รักษาแมลงศัตรูธรรมชาติ</li>
-                    </ul>
-
-                    <h3>ลดโอกาสเกิดซ้ำ</h3>
-                    <p>
-                        ดูแลพืชให้แข็งแรง ไม่ให้ปุ๋ยไนโตรเจนมากเกินไป และติดตามอาการที่ยอดอ่อนอย่างสม่ำเสมอ
-                    </p>
-
-                    <a class="popup-source" href="https://ipm.ucanr.edu/home-and-landscape/thrips/" target="_blank" rel="noopener">
-                        อ่านเพิ่มเติม: UC IPM ↗
-                    </a>
-                </div>
-
-            </div>
+            <a
+              class="popup-source"
+              href="https://ipm.ucanr.edu/home-and-landscape/thrips/"
+              target="_blank"
+              rel="noopener"
+            >
+              อ่านเพิ่มเติม: UC IPM ↗
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="modal fade pest-modal" id="whiteflyModal" tabindex="-1" aria-labelledby="whiteflyTitle" aria-hidden="true">
+    <div
+      class="modal fade pest-modal"
+      id="whiteflyModal"
+      tabindex="-1"
+      aria-labelledby="whiteflyTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="whiteflyTitle">แมลงหวี่ขาว</h2>
 
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="ปิด"
+            ></button>
+          </div>
 
-                <div class="modal-header">
-                    <h2 class="modal-title" id="whiteflyTitle">แมลงหวี่ขาว</h2>
+          <div class="modal-body">
+            <img
+              src="img/แมลงหวี่ขาว.jpeg"
+              class="popup-image"
+              alt="แมลงหวี่ขาว"
+            />
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
-                </div>
+            <p class="popup-category">แมลงศัตรูพืช · พืชผัก / ไม้ประดับ</p>
 
-                <div class="modal-body">
-                    <img src="img/แมลงหวี่ขาว.jpeg" class="popup-image" alt="แมลงหวี่ขาว">
+            <h3>สังเกตอาการ</h3>
+            <p>
+              พบแมลงสีขาวเล็ก ๆ เกาะใต้ใบ เมื่อรบกวนจะบินขึ้น อาจพบใบเหลือง
+              มูลหวาน หรือราดำ
+            </p>
 
-                    <p class="popup-category">แมลงศัตรูพืช · พืชผัก / ไม้ประดับ</p>
+            <h3>ดูแลเบื้องต้นอย่างไร</h3>
+            <ul>
+              <li>พลิกดูใต้ใบเพื่อสำรวจตัวอ่อนและตัวเต็มวัย</li>
+              <li>ตรวจต้นใกล้เคียงเพื่อดูการกระจายของแมลง</li>
+              <li>รักษาแมลงศัตรูธรรมชาติและแตนเบียน</li>
+            </ul>
 
-                    <h3>สังเกตอาการ</h3>
-                    <p>
-                        พบแมลงสีขาวเล็ก ๆ เกาะใต้ใบ เมื่อรบกวนจะบินขึ้น อาจพบใบเหลือง มูลหวาน หรือราดำ
-                    </p>
+            <h3>ลดโอกาสเกิดซ้ำ</h3>
+            <p>
+              ตรวจต้นกล้าก่อนนำเข้าแปลง
+              ใช้กับดักกาวเหนียวสีเหลืองเพื่อติดตามแมลง
+              และหลีกเลี่ยงการใช้สารโดยไม่จำเป็น
+            </p>
 
-                    <h3>ดูแลเบื้องต้นอย่างไร</h3>
-                    <ul>
-                        <li>พลิกดูใต้ใบเพื่อสำรวจตัวอ่อนและตัวเต็มวัย</li>
-                        <li>ตรวจต้นใกล้เคียงเพื่อดูการกระจายของแมลง</li>
-                        <li>รักษาแมลงศัตรูธรรมชาติและแตนเบียน</li>
-                    </ul>
-
-                    <h3>ลดโอกาสเกิดซ้ำ</h3>
-                    <p>
-                        ตรวจต้นกล้าก่อนนำเข้าแปลง ใช้กับดักกาวเหนียวสีเหลืองเพื่อติดตามแมลง และหลีกเลี่ยงการใช้สารโดยไม่จำเป็น
-                    </p>
-
-                    <a class="popup-source" href="https://ipm.ucanr.edu/home-and-landscape/whiteflies/" target="_blank" rel="noopener">
-                        อ่านเพิ่มเติม: UC IPM ↗
-                    </a>
-                </div>
-
-            </div>
+            <a
+              class="popup-source"
+              href="https://ipm.ucanr.edu/home-and-landscape/whiteflies/"
+              target="_blank"
+              rel="noopener"
+            >
+              อ่านเพิ่มเติม: UC IPM ↗
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
+    <div
+      class="modal fade pest-modal"
+      id="leafSpotModal"
+      tabindex="-1"
+      aria-labelledby="leafSpotTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="leafSpotTitle">โรคใบจุด</h2>
 
-    <div class="modal fade pest-modal" id="leafSpotModal" tabindex="-1" aria-labelledby="leafSpotTitle" aria-hidden="true">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="ปิด"
+            ></button>
+          </div>
 
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+          <div class="modal-body">
+            <img
+              src="img/โรคใบจุด.jpg"
+              class="popup-image"
+              alt="ตัวอย่างโรคใบจุด"
+            />
 
-                <div class="modal-header">
-                    <h2 class="modal-title" id="leafSpotTitle">โรคใบจุด</h2>
+            <p class="popup-category">โรคพืช · อาการแตกต่างตามชนิดพืช</p>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
-                </div>
+            <h3>สังเกตอาการ</h3>
+            <p>
+              ใบมีจุดสีผิดปกติ เช่น สีน้ำตาลหรือดำ จุดอาจขยายและรวมกันเป็นแผล
+              ใบจุดมีได้หลายสาเหตุ จึงควรตรวจชนิดพืชร่วมด้วย
+            </p>
 
-                <div class="modal-body">
-                    <img src="img/โรคใบจุด.jpg" class="popup-image" alt="ตัวอย่างโรคใบจุด">
+            <h3>ดูแลเบื้องต้นอย่างไร</h3>
+            <ul>
+              <li>กรณีโรคจากเชื้อรา ควรลดน้ำกระเด็นระหว่างต้น</li>
+              <li>ทำความสะอาดอุปกรณ์ที่สัมผัสต้นเป็นโรค</li>
+              <li>แยกส่วนที่เป็นโรคออกอย่างเหมาะสม</li>
+            </ul>
 
-                    <p class="popup-category">โรคพืช · อาการแตกต่างตามชนิดพืช</p>
+            <h3>ลดโอกาสเกิดซ้ำ</h3>
+            <p>
+              ใช้ต้นพันธุ์ปลอดโรค ดูแลความสะอาดของภาชนะปลูก
+              และหลีกเลี่ยงการให้น้ำพ่นเหนือใบ
+            </p>
 
-                    <h3>สังเกตอาการ</h3>
-                    <p>
-                        ใบมีจุดสีผิดปกติ เช่น สีน้ำตาลหรือดำ จุดอาจขยายและรวมกันเป็นแผล ใบจุดมีได้หลายสาเหตุ จึงควรตรวจชนิดพืชร่วมด้วย
-                    </p>
+            <p class="popup-note">
+              ภาพและอาการใช้เพื่อสังเกตเบื้องต้น
+              ไม่สามารถยืนยันเชื้อสาเหตุได้จากรูปเพียงอย่างเดียว
+            </p>
 
-                    <h3>ดูแลเบื้องต้นอย่างไร</h3>
-                    <ul>
-                        <li>กรณีโรคจากเชื้อรา ควรลดน้ำกระเด็นระหว่างต้น</li>
-                        <li>ทำความสะอาดอุปกรณ์ที่สัมผัสต้นเป็นโรค</li>
-                        <li>แยกส่วนที่เป็นโรคออกอย่างเหมาะสม</li>
-                    </ul>
-
-                    <h3>ลดโอกาสเกิดซ้ำ</h3>
-                    <p>
-                        ใช้ต้นพันธุ์ปลอดโรค ดูแลความสะอาดของภาชนะปลูก และหลีกเลี่ยงการให้น้ำพ่นเหนือใบ
-                    </p>
-
-                    <p class="popup-note">
-                        ภาพและอาการใช้เพื่อสังเกตเบื้องต้น ไม่สามารถยืนยันเชื้อสาเหตุได้จากรูปเพียงอย่างเดียว
-                    </p>
-
-                    <a class="popup-source" href="https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/fungal-leaf-spots-blights-and-cankers/" target="_blank" rel="noopener">
-                        อ่านเพิ่มเติม: UC IPM ↗
-                    </a>
-                </div>
-
-            </div>
+            <a
+              class="popup-source"
+              href="https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/fungal-leaf-spots-blights-and-cankers/"
+              target="_blank"
+              rel="noopener"
+            >
+              อ่านเพิ่มเติม: UC IPM ↗
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
+    <div
+      class="modal fade pest-modal"
+      id="leafMinerModal"
+      tabindex="-1"
+      aria-labelledby="leafMinerTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="leafMinerTitle">หนอนชอนใบ</h2>
 
-    <div class="modal fade pest-modal" id="leafMinerModal" tabindex="-1" aria-labelledby="leafMinerTitle" aria-hidden="true">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="ปิด"
+            ></button>
+          </div>
 
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+          <div class="modal-body">
+            <img
+              src="img/หนอนชอนใบ.jpg"
+              class="popup-image"
+              alt="รอยหนอนชอนใบ"
+            />
 
-                <div class="modal-header">
-                    <h2 class="modal-title" id="leafMinerTitle">หนอนชอนใบ</h2>
+            <p class="popup-category">
+              แมลงศัตรูพืช · มะเขือเทศ / ผักตระกูลกะหล่ำ
+            </p>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
-                </div>
+            <h3>สังเกตอาการ</h3>
+            <p>
+              ใบมีรอยเส้นคดเคี้ยวสีอ่อน เกิดจากตัวอ่อนกินอยู่ภายในเนื้อใบ
+              รอยเก่าอาจยังอยู่แม้ตัวอ่อนออกไปแล้ว
+            </p>
 
-                <div class="modal-body">
-                    <img src="img/หนอนชอนใบ.jpg" class="popup-image" alt="รอยหนอนชอนใบ">
+            <h3>ดูแลเบื้องต้นอย่างไร</h3>
+            <ul>
+              <li>ตรวจรอยใหม่ว่ามีตัวอ่อนอยู่หรือไม่</li>
+              <li>ติดตามความเสียหายร่วมกับอายุของพืช</li>
+              <li>อนุรักษ์แตนเบียนซึ่งช่วยควบคุมแมลงตามธรรมชาติ</li>
+            </ul>
 
-                    <p class="popup-category">
-                        แมลงศัตรูพืช · มะเขือเทศ / ผักตระกูลกะหล่ำ
-                    </p>
+            <h3>ลดโอกาสเกิดซ้ำ</h3>
+            <p>
+              สำรวจแปลงสม่ำเสมอ และหลีกเลี่ยงการใช้สารกำจัดแมลงแบบครอบคลุม
+              โดยไม่จำเป็น เพราะอาจกระทบศัตรูธรรมชาติ
+            </p>
 
-                    <h3>สังเกตอาการ</h3>
-                    <p>
-                        ใบมีรอยเส้นคดเคี้ยวสีอ่อน เกิดจากตัวอ่อนกินอยู่ภายในเนื้อใบ รอยเก่าอาจยังอยู่แม้ตัวอ่อนออกไปแล้ว
-                    </p>
-
-                    <h3>ดูแลเบื้องต้นอย่างไร</h3>
-                    <ul>
-                        <li>ตรวจรอยใหม่ว่ามีตัวอ่อนอยู่หรือไม่</li>
-                        <li>ติดตามความเสียหายร่วมกับอายุของพืช</li>
-                        <li>อนุรักษ์แตนเบียนซึ่งช่วยควบคุมแมลงตามธรรมชาติ</li>
-                    </ul>
-
-                    <h3>ลดโอกาสเกิดซ้ำ</h3>
-                    <p>
-                        สำรวจแปลงสม่ำเสมอ และหลีกเลี่ยงการใช้สารกำจัดแมลงแบบครอบคลุม โดยไม่จำเป็น เพราะอาจกระทบศัตรูธรรมชาติ
-                    </p>
-
-                    <a class="popup-source" href="https://ipm.ucanr.edu/agriculture/cole-crops/leafminers/" target="_blank" rel="noopener">
-                        อ่านเพิ่มเติม: UC IPM ↗
-                    </a>
-                </div>
-
-            </div>
+            <a
+              class="popup-source"
+              href="https://ipm.ucanr.edu/agriculture/cole-crops/leafminers/"
+              target="_blank"
+              rel="noopener"
+            >
+              อ่านเพิ่มเติม: UC IPM ↗
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
+    <div
+      class="modal fade pest-modal"
+      id="leafBlightModal"
+      tabindex="-1"
+      aria-labelledby="leafBlightTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="leafBlightTitle">โรคใบไหม้</h2>
 
-    <div class="modal fade pest-modal" id="leafBlightModal" tabindex="-1" aria-labelledby="leafBlightTitle" aria-hidden="true">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="ปิด"
+            ></button>
+          </div>
 
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+          <div class="modal-body">
+            <img
+              src="img/โรคใบไหม้.jpeg"
+              class="popup-image"
+              alt="ตัวอย่างโรคใบไหม้"
+            />
 
-                <div class="modal-header">
-                    <h2 class="modal-title" id="leafBlightTitle">โรคใบไหม้</h2>
+            <p class="popup-category">โรคพืช · ตรวจชนิดพืชและสาเหตุร่วมกัน</p>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
-                </div>
+            <h3>สังเกตอาการ</h3>
+            <p>
+              แผลบนใบขยายรวมกันเป็นบริเวณกว้าง ใบเปลี่ยนเป็นสีน้ำตาลหรือดำ
+              ใบไหม้เป็นลักษณะอาการ ไม่ใช่ชื่อเชื้อเพียงชนิดเดียว
+            </p>
 
-                <div class="modal-body">
-                    <img src="img/โรคใบไหม้.jpeg" class="popup-image" alt="ตัวอย่างโรคใบไหม้">
+            <h3>ดูแลเบื้องต้นอย่างไร</h3>
+            <ul>
+              <li>แยกต้นที่มีอาการและสำรวจต้นใกล้เคียง</li>
+              <li>กรณีโรคจากแบคทีเรีย ควรลดน้ำกระเด็น</li>
+              <li>ทำความสะอาดมือและอุปกรณ์หลังสัมผัสต้นเป็นโรค</li>
+            </ul>
 
-                    <p class="popup-category">โรคพืช · ตรวจชนิดพืชและสาเหตุร่วมกัน</p>
+            <h3>ลดโอกาสเกิดซ้ำ</h3>
+            <p>
+              เลือกวัสดุขยายพันธุ์ที่ปลอดโรค ดูแลความสะอาดของพื้นที่ปลูก
+              และหลีกเลี่ยงการให้น้ำพ่นเหนือใบ
+            </p>
 
-                    <h3>สังเกตอาการ</h3>
-                    <p>
-                        แผลบนใบขยายรวมกันเป็นบริเวณกว้าง ใบเปลี่ยนเป็นสีน้ำตาลหรือดำ ใบไหม้เป็นลักษณะอาการ ไม่ใช่ชื่อเชื้อเพียงชนิดเดียว
-                    </p>
+            <p class="popup-note">
+              หากไม่แน่ใจสาเหตุ ควรถ่ายภาพทั้งต้นและส่วนที่เสียหาย
+              เพื่อปรึกษาเจ้าหน้าที่เกษตร
+            </p>
 
-                    <h3>ดูแลเบื้องต้นอย่างไร</h3>
-                    <ul>
-                        <li>แยกต้นที่มีอาการและสำรวจต้นใกล้เคียง</li>
-                        <li>กรณีโรคจากแบคทีเรีย ควรลดน้ำกระเด็น</li>
-                        <li>ทำความสะอาดมือและอุปกรณ์หลังสัมผัสต้นเป็นโรค</li>
-                    </ul>
-
-                    <h3>ลดโอกาสเกิดซ้ำ</h3>
-                    <p>
-                        เลือกวัสดุขยายพันธุ์ที่ปลอดโรค ดูแลความสะอาดของพื้นที่ปลูก และหลีกเลี่ยงการให้น้ำพ่นเหนือใบ
-                    </p>
-
-                    <p class="popup-note">
-                        หากไม่แน่ใจสาเหตุ ควรถ่ายภาพทั้งต้นและส่วนที่เสียหาย เพื่อปรึกษาเจ้าหน้าที่เกษตร
-                    </p>
-
-                    <a class="popup-source" href="https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/bacterial-leaf-spots-blights-cankers-and-rots/" target="_blank" rel="noopener">
-                        อ่านเพิ่มเติม: UC IPM ↗
-                    </a>
-                </div>
-
-            </div>
+            <a
+              class="popup-source"
+              href="https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/bacterial-leaf-spots-blights-cankers-and-rots/"
+              target="_blank"
+              rel="noopener"
+            >
+              อ่านเพิ่มเติม: UC IPM ↗
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
+    <div
+      class="modal fade pest-modal"
+      id="diamondbackModal"
+      tabindex="-1"
+      aria-labelledby="diamondbackTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="diamondbackTitle">หนอนใยผัก</h2>
 
-    <div class="modal fade pest-modal" id="diamondbackModal" tabindex="-1" aria-labelledby="diamondbackTitle" aria-hidden="true">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="ปิด"
+            ></button>
+          </div>
 
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
+          <div class="modal-body">
+            <img src="img/หนอนใยผัก.jpg" class="popup-image" alt="หนอนใยผัก" />
 
-                <div class="modal-header">
-                    <h2 class="modal-title" id="diamondbackTitle">หนอนใยผัก</h2>
+            <p class="popup-category">แมลงศัตรูพืช · คะน้า / กะหล่ำ / ผักกาด</p>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
-                </div>
+            <h3>สังเกตอาการ</h3>
+            <p>
+              หนอนกัดกินใต้ใบจนบางใสหรือเป็นรู
+              เมื่อถูกรบกวนอาจดิ้นและทิ้งตัวด้วยเส้นใย
+            </p>
 
-                <div class="modal-body">
-                    <img src="img/หนอนใยผัก.jpg" class="popup-image" alt="หนอนใยผัก">
+            <h3>ดูแลเบื้องต้นอย่างไร</h3>
+            <ul>
+              <li>สำรวจใต้ใบและใบอ่อน</li>
+              <li>แปลงขนาดเล็กสามารถเก็บหนอนออกเมื่อพบ</li>
+              <li>รักษาแตนเบียนและศัตรูธรรมชาติ</li>
+            </ul>
 
-                    <p class="popup-category">แมลงศัตรูพืช · คะน้า / กะหล่ำ / ผักกาด</p>
+            <h3>ลดโอกาสเกิดซ้ำ</h3>
+            <p>
+              ตรวจต้นกล้าก่อนปลูก และใช้ตาข่ายป้องกันแมลงที่เหมาะสม
+              ไม่ควรใช้สารเดิมซ้ำโดยไม่มีคำแนะนำ เพราะหนอนใยผักมีปัญหาการดื้อสาร
+            </p>
 
-                    <h3>สังเกตอาการ</h3>
-                    <p>
-                        หนอนกัดกินใต้ใบจนบางใสหรือเป็นรู เมื่อถูกรบกวนอาจดิ้นและทิ้งตัวด้วยเส้นใย
-                    </p>
-
-                    <h3>ดูแลเบื้องต้นอย่างไร</h3>
-                    <ul>
-                        <li>สำรวจใต้ใบและใบอ่อน</li>
-                        <li>แปลงขนาดเล็กสามารถเก็บหนอนออกเมื่อพบ</li>
-                        <li>รักษาแตนเบียนและศัตรูธรรมชาติ</li>
-                    </ul>
-
-                    <h3>ลดโอกาสเกิดซ้ำ</h3>
-                    <p>
-                        ตรวจต้นกล้าก่อนปลูก และใช้ตาข่ายป้องกันแมลงที่เหมาะสม ไม่ควรใช้สารเดิมซ้ำโดยไม่มีคำแนะนำ เพราะหนอนใยผักมีปัญหาการดื้อสาร
-                    </p>
-
-                    <a class="popup-source" href="https://ipm.ucanr.edu/home-and-landscape/diamondback-moth/" target="_blank" rel="noopener">
-                        อ่านเพิ่มเติม: UC IPM ↗
-                    </a>
-                </div>
-
-            </div>
+            <a
+              class="popup-source"
+              href="https://ipm.ucanr.edu/home-and-landscape/diamondback-moth/"
+              target="_blank"
+              rel="noopener"
+            >
+              อ่านเพิ่มเติม: UC IPM ↗
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="js/bootstrap.min.js"></script>
 
-
     <footer class="site-footer">
-        <div class="footer-top">
-            <div class="footer-about">
-                <div class="footer-logo">
-                    <span class="footer-logo-icon"><img src="img/icon.png" alt="icon"></span>
+      <div class="footer-top">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <span class="footer-logo-icon"
+              ><img src="img/icon.png" alt="icon"
+            /></span>
 
-                    <div>
-                        <strong>Agricultural</strong>
-                        <small>Knowledge</small>
-                    </div>
-                </div>
-
-                <p>
-                    แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
-                </p>
+            <div>
+              <strong>Agricultural</strong>
+              <small>Knowledge</small>
             </div>
+          </div>
 
-            <div class="footer-column">
-                <h3>เมนูหลัก</h3>
-
-                <ul>
-                    <li><a href="home.html">หน้าหลัก</a></li>
-                    <li><a href="knowledge.html">ความรู้</a></li>
-                    <li><a href="tools.html">เครื่องมือ</a></li>
-                    <li><a href="quiz.html">แบบทดสอบ</a></li>
-                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>ความรู้</h3>
-
-                <ul>
-                    <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
-                    <li><a href="water.html">การจัดการน้ำ</a></li>
-                    <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
-                    <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
-                    <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h3>ติดต่อเรา</h3>
-
-                <p>
-                    ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ เพื่อยกระดับคุณภาพชีวิตเกษตรกร
-                </p>
-
-                <div class="footer-social">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="social-line" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
+          <p>
+            แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร
+            สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+          </p>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+        <div class="footer-column">
+          <h3>เมนูหลัก</h3>
 
-            <div class="footer-policy">
-                <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
-                <span>·</span>
-                <a href="terms.html">ข้อกำหนดการใช้งาน</a>
-            </div>
+          <ul>
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="knowledge.html">ความรู้</a></li>
+            <li><a href="tools.html">เครื่องมือ</a></li>
+            <li><a href="quiz.html">แบบทดสอบ</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          </ul>
         </div>
+
+        <div class="footer-column">
+          <h3>ความรู้</h3>
+
+          <ul>
+            <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
+            <li><a href="water.html">การจัดการน้ำ</a></li>
+            <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+            <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
+            <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>ติดต่อเรา</h3>
+
+          <p>
+            ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ
+            เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="social-line" aria-label="LINE"
+              ><i class="fa-brands fa-line"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+
+        <div class="footer-policy">
+          <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+          <span>·</span>
+          <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

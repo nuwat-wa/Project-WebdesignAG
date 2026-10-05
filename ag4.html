@@ -17,7 +17,7 @@
     <header class="header">
       <div class="logo">
         <div class="logo-icon">
-          <img src="img/icon.png" alt="icon" />
+          <img src="img/icon.png" alt="Agricultural Knowledge icon" />
         </div>
         <div class="brand-text">
           <h1 class="title">Agricultural</h1>
@@ -37,14 +37,16 @@
         <a href="index.html">หน้าหลัก</a>
 
         <div class="dropdown-hover">
-          <a href="#" class="dropdown-btn active"
-            >ความรู้ <i class="fa-solid fa-caret-down"></i
-          ></a>
+          <a href="#knowledge" class="dropdown-btn active">
+            ความรู้ <i class="fa-solid fa-caret-down"></i>
+          </a>
 
-          <div class="menu-level1">
+          <div class="menu-level1" id="knowledge">
             <div class="menu-item-has-children">
-              <a href="#">มือใหม่ <i class="fa-solid fa-caret-right"></i></a>
-              <div class="menu-level2">
+              <a href="#beginner">
+                มือใหม่ <i class="fa-solid fa-caret-right"></i>
+              </a>
+              <div class="menu-level2" id="beginner">
                 <a href="ag4.html">เกษตรสมัยใหม่</a>
                 <a href="ag5.html">ปลูกข้าว</a>
                 <a href="ag6.html">พืชสวน</a>
@@ -58,10 +60,10 @@
             </div>
 
             <div class="menu-item-has-children">
-              <a href="#"
-                >ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
-              ></a>
-              <div class="menu-level2">
+              <a href="#advanced">
+                ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i>
+              </a>
+              <div class="menu-level2" id="advanced">
                 <a href="ag13.html">เทคโนโลยีการเกษตร</a>
                 <a href="ag15.html">การวางแผนการผลิต</a>
                 <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
@@ -143,12 +145,12 @@
           </p>
 
           <div class="nav-buttons" aria-hidden="true">
-            <span class="nav-btn prev"
-              ><i class="fa-solid fa-arrow-left"></i
-            ></span>
-            <span class="nav-btn next"
-              ><i class="fa-solid fa-arrow-right"></i
-            ></span>
+            <span class="nav-btn prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <span class="nav-btn next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
           </div>
         </div>
       </div>
@@ -175,9 +177,9 @@
       <div class="footer-top">
         <div class="footer-about">
           <div class="footer-logo">
-            <span class="footer-logo-icon"
-              ><img src="img/icon.png" alt="icon"
-            /></span>
+            <span class="footer-logo-icon">
+              <img src="img/icon.png" alt="Agricultural Knowledge icon" />
+            </span>
 
             <div>
               <strong>Agricultural</strong>
@@ -224,15 +226,15 @@
           </p>
 
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="#" class="social-line" aria-label="LINE"
-              ><i class="fa-brands fa-line"></i
-            ></a>
-            <a href="#" aria-label="YouTube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://line.me/" class="social-line" aria-label="LINE">
+              <i class="fa-brands fa-line"></i>
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -241,9 +243,9 @@
         <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
 
         <div class="footer-policy">
-          <a href="#">นโยบายความเป็นส่วนตัว</a>
+          <a href="#privacy">นโยบายความเป็นส่วนตัว</a>
           <span>·</span>
-          <a href="#">ข้อกำหนดการใช้งาน</a>
+          <a href="#terms">ข้อกำหนดการใช้งาน</a>
         </div>
       </div>
     </footer>

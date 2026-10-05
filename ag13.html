@@ -1,582 +1,480 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>เทคโนโลยีการเกษตร</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="style/ag13.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/ag13.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-
-        <div class="logo">
-            <div class="logo-icon">
-                <img src="img/icon.png" alt="icon">
-            </div>
-
-            <div class="brand-text">
-                <h1 class="title">Agricultural</h1>
-                <span class="subtitle">Knowledge</span>
-            </div>
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="img/icon.png" alt="icon" />
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <div class="brand-text">
+          <h1 class="title">Agricultural</h1>
+          <span class="subtitle">Knowledge</span>
+        </div>
+      </div>
 
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-        <nav class="nav-links">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-            <a href="index.html">หน้าหลัก</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
 
-            <div class="dropdown-hover">
+        <div class="dropdown-hover">
+          <a href="#" class="dropdown-btn active">
+            ความรู้
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
 
-                <a href="#" class="dropdown-btn active">
-                    ความรู้
-                    <i class="fa-solid fa-caret-down"></i>
-                </a>
+          <div class="menu-level1">
+            <div class="menu-item-has-children">
+              <a href="#">
+                มือใหม่
+                <i class="fa-solid fa-caret-right"></i>
+              </a>
 
-                <div class="menu-level1">
-
-                    <div class="menu-item-has-children">
-
-                        <a href="#">
-                            มือใหม่
-                            <i class="fa-solid fa-caret-right"></i>
-                        </a>
-
-                        <div class="menu-level2">
-                            <a href="ag4.html">เกษตรสมัยใหม่</a>
-                            <a href="ag5.html">ปลูกข้าว</a>
-                            <a href="ag6.html">พืชสวน</a>
-                            <a href="ag7.html">พืชไร่</a>
-                            <a href="ag8.html">ปลูกผัก</a>
-                            <a href="ag9.html">การเตรียมดิน</a>
-                            <a href="ag11.html">การเลือกปุ๋ย</a>
-                            <a href="ag12.html">โรคศัตรูพืช</a>
-                            <a href="ag16.html">ความเสี่ยง</a>
-                        </div>
-
-                    </div>
-
-                    <div class="menu-item-has-children">
-
-                        <a href="#">
-                            ผู้มีพื้นฐาน
-                            <i class="fa-solid fa-caret-right"></i>
-                        </a>
-
-                        <div class="menu-level2">
-                            <a href="ag13.html">เทคโนโลยีการเกษตร</a>
-                            <a href="ag15.html">การวางแผนการผลิต</a>
-                            <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
-                            <a href="ag14.html">การจัดการที่ดิน</a>
-                        </div>
-
-                    </div>
-
-                    <a href="ag3.html">หลักการพอเพียง</a>
-                    <a href="ag17.html">เรื่องเล่า</a>
-                    <a href="ag18.html">บทความ</a>
-
-                </div>
-
+              <div class="menu-level2">
+                <a href="ag4.html">เกษตรสมัยใหม่</a>
+                <a href="ag5.html">ปลูกข้าว</a>
+                <a href="ag6.html">พืชสวน</a>
+                <a href="ag7.html">พืชไร่</a>
+                <a href="ag8.html">ปลูกผัก</a>
+                <a href="ag9.html">การเตรียมดิน</a>
+                <a href="ag11.html">การเลือกปุ๋ย</a>
+                <a href="ag12.html">โรคศัตรูพืช</a>
+                <a href="ag16.html">ความเสี่ยง</a>
+              </div>
             </div>
 
-            <a href="ag19.html">เครื่องมือ</a>
-            <a href="ag20.html">แบบทดสอบ</a>
-            <a href="ag2.html">เกี่ยวกับเรา</a>
+            <div class="menu-item-has-children">
+              <a href="#">
+                ผู้มีพื้นฐาน
+                <i class="fa-solid fa-caret-right"></i>
+              </a>
 
-        </nav>
+              <div class="menu-level2">
+                <a href="ag13.html">เทคโนโลยีการเกษตร</a>
+                <a href="ag15.html">การวางแผนการผลิต</a>
+                <a href="ag10.html">ระบบน้ำอัจฉริยะ</a>
+                <a href="ag14.html">การจัดสรรที่ดิน</a>
+              </div>
+            </div>
 
+            <a href="ag3.html">หลักการพอเพียง</a>
+            <a href="ag17.html">เรื่องเล่า</a>
+            <a href="ag18.html">บทความ</a>
+          </div>
+        </div>
+
+        <a href="ag19.html">เครื่องมือ</a>
+        <a href="ag20.html">แบบทดสอบ</a>
+        <a href="ag2.html">เกี่ยวกับเรา</a>
+      </nav>
     </header>
 
-
     <main class="technology-page">
-
-        <div class="page-heading">
-
-            <h1>เทคโนโลยีการเกษตร</h1>
-
-            <p>
-                เรียนรู้เทคโนโลยีและนวัตกรรมเพื่อการเกษตร เลือกหัวข้อเพื่ออ่านรายละเอียด
-            </p>
-
-        </div>
-
-
-        <div class="technology-list">
-
-            <!-- 01 โดรนการเกษตร -->
-            <details class="technology-item">
-
-                <summary class="technology-header">
-
-                    <span class="item-number">01</span>
-
-                    <span class="item-title">โดรนการเกษตร</span>
-
-                    <span class="item-description">
-                        สำรวจแปลงและดูแลพืชจากมุมสูง
-                    </span>
-
-                    <span class="toggle-icon" aria-hidden="true"></span>
-
-                </summary>
-
-
-                <div class="technology-content">
-
-                    <div class="technology-card">
-
-                        <img src="img/โดรนการเกษตร.webp" alt="โดรนที่ใช้ในงานเกษตร">
-
-                        <div class="technology-text">
-
-                            <span class="topic-badge">สำรวจพื้นที่</span>
-
-                            <h2>สำรวจแปลงและดูแลพืชจากมุมสูง</h2>
-
-                            <p>
-                                โดรนช่วยถ่ายภาพและสำรวจแปลงจากมุมสูง ทำให้เห็นภาพรวมของพื้นที่ และจุดที่ควรลงไปตรวจสอบเพิ่มเติม ความสามารถขึ้นอยู่กับชนิดของโดรน และอุปกรณ์ที่ติดตั้ง
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="more-content">
-
-                        <h3>เริ่มต้นอย่างไร?</h3>
-
-                        <p>
-                            กำหนดก่อนว่าต้องการใช้โดรนทำอะไร เช่น สำรวจพื้นที่หรือบันทึกภาพการเติบโต แล้วเลือกอุปกรณ์ให้เหมาะกับงาน
-                        </p>
-
-                        <ul>
-                            <li>สำรวจขนาดพื้นที่และสิ่งกีดขวางในแปลง</li>
-                            <li>ศึกษาวิธีใช้งานและข้อกำหนดที่เกี่ยวข้องก่อนบิน</li>
-                            <li>นำภาพที่ได้มาตรวจสอบร่วมกับสภาพจริงในแปลง</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-
-            <!-- 02 Smart Farming -->
-            <details class="technology-item">
-
-                <summary class="technology-header">
-
-                    <span class="item-number">02</span>
-
-                    <span class="item-title">Smart Farming</span>
-
-                    <span class="item-description">
-                        วางแผนฟาร์มด้วยข้อมูล
-                    </span>
-
-                    <span class="toggle-icon" aria-hidden="true"></span>
-
-                </summary>
-
-
-                <div class="technology-content">
-
-                    <div class="technology-card">
-
-                        <img src="img/smart-farm.webp" alt="การใช้เทคโนโลยีติดตามข้อมูลในฟาร์ม" loading="lazy">
-
-                        <div class="technology-text">
-
-                            <span class="topic-badge">ฟาร์มอัจฉริยะ</span>
-
-                            <h2>ใช้ข้อมูลช่วยตัดสินใจดูแลฟาร์ม</h2>
-
-                            <p>
-                                Smart Farming คือการนำข้อมูลและเทคโนโลยี มาช่วยจัดการงานเกษตร เช่น บันทึกการให้น้ำ ติดตามสภาพแปลง และวางแผนการดูแลพืช สามารถเริ่มจากเครื่องมือง่าย ๆ ที่เหมาะกับขนาดฟาร์ม
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="more-content">
-
-                        <h3>เริ่มจากปัญหาที่อยากแก้</h3>
-
-                        <p>
-                            เลือกงานที่ต้องการปรับปรุงก่อน แล้วค่อยหาเครื่องมือมาช่วย ไม่จำเป็นต้องติดตั้งระบบทั้งหมดพร้อมกัน
-                        </p>
-
-                        <ul>
-                            <li>บันทึกวันปลูก การให้น้ำ และค่าใช้จ่าย</li>
-                            <li>เปรียบเทียบข้อมูลระหว่างรอบการปลูก</li>
-                            <li>ทดลองระบบในพื้นที่เล็กก่อนขยายใช้งาน</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-
-            <!-- 03 IoT & Sensor -->
-            <details class="technology-item">
-
-                <summary class="technology-header">
-
-                    <span class="item-number">03</span>
-
-                    <span class="item-title">IoT &amp; Sensor</span>
-
-                    <span class="item-description">
-                        ตรวจวัดและติดตามแปลงปลูก
-                    </span>
-
-                    <span class="toggle-icon" aria-hidden="true"></span>
-
-                </summary>
-
-
-                <div class="technology-content">
-
-                    <div class="technology-card">
-
-                        <img src="img/IoT.jpg" alt="อุปกรณ์เซนเซอร์ตรวจวัดข้อมูลในพื้นที่เกษตร" loading="lazy">
-
-                        <div class="technology-text">
-
-                            <span class="topic-badge">ตรวจวัดสภาพแปลง</span>
-
-                            <h2>ติดตามข้อมูลจากอุปกรณ์ในพื้นที่</h2>
-
-                            <p>
-                                เซนเซอร์ใช้ตรวจวัดค่าต่าง ๆ เช่น ความชื้นดิน อุณหภูมิ และความชื้นอากาศ เมื่อนำมาเชื่อมต่อกับระบบ IoT ก็สามารถส่งข้อมูลไปแสดงบนอุปกรณ์อื่น เพื่อช่วยติดตามสภาพแปลง
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="more-content">
-
-                        <h3>ติดตั้งอย่างไรให้ข้อมูลมีประโยชน์?</h3>
-
-                        <p>
-                            เลือกเซนเซอร์ให้ตรงกับสิ่งที่ต้องการวัด และติดตั้งในตำแหน่งที่สะท้อนสภาพพื้นที่จริง
-                        </p>
-
-                        <ul>
-                            <li>ตรวจแหล่งจ่ายไฟและสัญญาณสื่อสารในแปลง</li>
-                            <li>ติดตั้งและตรวจสอบอุปกรณ์ตามคู่มือผู้ผลิต</li>
-                            <li>เปรียบเทียบค่าที่วัดได้กับการสำรวจแปลงจริง</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-
-            <!-- 04 AI / Big Data -->
-            <details class="technology-item">
-
-                <summary class="technology-header">
-
-                    <span class="item-number">04</span>
-
-                    <span class="item-title">AI / Big Data</span>
-
-                    <span class="item-description">
-                        วิเคราะห์ข้อมูลเพื่อการเกษตร
-                    </span>
-
-                    <span class="toggle-icon" aria-hidden="true"></span>
-
-                </summary>
-
-
-                <div class="technology-content">
-
-                    <div class="technology-card">
-
-                        <img src="img/Ai-Bigdata.jpeg" alt="การใช้ข้อมูลประกอบการวางแผนเกษตร" loading="lazy">
-
-                        <div class="technology-text">
-
-                            <span class="topic-badge">วิเคราะห์ข้อมูล</span>
-
-                            <h2>มองหาแนวโน้มจากข้อมูลในฟาร์ม</h2>
-
-                            <p>
-                                การวิเคราะห์ข้อมูลช่วยเปรียบเทียบผลผลิต สภาพอากาศ และการดูแลในแต่ละช่วงเวลา ส่วน AI สามารถช่วยค้นหารูปแบบจากข้อมูล เพื่อนำไปประกอบการตัดสินใจ โดยผลลัพธ์ขึ้นอยู่กับคุณภาพของข้อมูลที่ใช้
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="more-content">
-
-                        <h3>เตรียมข้อมูลก่อนเริ่มใช้งาน</h3>
-
-                        <p>
-                            เริ่มจากบันทึกข้อมูลให้สม่ำเสมอ และใช้หน่วยวัดเดียวกัน เพื่อให้เปรียบเทียบข้อมูลได้ง่าย
-                        </p>
-
-                        <ul>
-                            <li>ระบุวันที่ พื้นที่ปลูก และชนิดพืชให้ชัดเจน</li>
-                            <li>ตรวจข้อมูลที่ขาดหายหรือกรอกผิดก่อนวิเคราะห์</li>
-                            <li>ใช้ผลวิเคราะห์ร่วมกับประสบการณ์และข้อมูลหน้างาน</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-
-            <!-- 05 เครื่องจักรกล -->
-            <details class="technology-item">
-
-                <summary class="technology-header">
-
-                    <span class="item-number">05</span>
-
-                    <span class="item-title">เครื่องจักรกล</span>
-
-                    <span class="item-description">
-                        ช่วยทุ่นแรงในการทำงาน
-                    </span>
-
-                    <span class="toggle-icon" aria-hidden="true"></span>
-
-                </summary>
-
-
-                <div class="technology-content">
-
-                    <div class="technology-card">
-
-                        <img src="img/เครื่องจักรการเกษตร.jpeg" alt="เครื่องจักรกลที่ใช้ในงานเกษตร" loading="lazy">
-
-                        <div class="technology-text">
-
-                            <span class="topic-badge">อุปกรณ์การเกษตร</span>
-
-                            <h2>เลือกเครื่องมือให้เหมาะกับงานและพื้นที่</h2>
-
-                            <p>
-                                เครื่องจักรช่วยงานเตรียมดิน ปลูก ดูแลแปลง หรือเก็บเกี่ยว การเลือกใช้งานควรพิจารณาขนาดพื้นที่ ลักษณะงาน และความสะดวกในการดูแลรักษา
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="more-content">
-
-                        <h3>พิจารณาอะไรบ้างก่อนเลือกใช้?</h3>
-
-                        <p>
-                            เปรียบเทียบการซื้อ การเช่า หรือการจ้างบริการให้เหมาะกับความถี่ในการใช้งาน
-                        </p>
-
-                        <ul>
-                            <li>เลือกขนาดเครื่องให้เหมาะกับแปลงและทางเข้าออก</li>
-                            <li>นับค่าเชื้อเพลิง ค่าซ่อม และค่าบำรุงรักษาร่วมด้วย</li>
-                            <li>ศึกษาคู่มือและใช้งานตามข้อกำหนดด้านความปลอดภัย</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-
-            <!-- 06 ระบบน้ำอัจฉริยะ -->
-            <details class="technology-item">
-
-                <summary class="technology-header">
-
-                    <span class="item-number">06</span>
-
-                    <span class="item-title">ระบบน้ำอัจฉริยะ</span>
-
-                    <span class="item-description">
-                        ควบคุมการให้น้ำอย่างเหมาะสม
-                    </span>
-
-                    <span class="toggle-icon" aria-hidden="true"></span>
-
-                </summary>
-
-
-                <div class="technology-content">
-
-                    <div class="technology-card">
-
-                        <img src="img/ระบบน้ำอัจฉริยะ.png" alt="ระบบให้น้ำในแปลงเพาะปลูก" loading="lazy">
-
-                        <div class="technology-text">
-
-                            <span class="topic-badge">จัดการน้ำ</span>
-
-                            <h2>วางแผนให้น้ำจากสภาพแปลง</h2>
-
-                            <p>
-                                ระบบน้ำอัจฉริยะช่วยควบคุมการให้น้ำ ตามเวลาหรือข้อมูลจากเซนเซอร์ โดยต้องตั้งค่าให้เหมาะกับชนิดพืช สภาพดิน และช่วงการเจริญเติบโต
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="more-content">
-
-                        <h3>เริ่มต้นวางระบบอย่างไร?</h3>
-
-                        <p>
-                            สำรวจแหล่งน้ำและแบ่งพื้นที่ให้น้ำให้เหมาะสม ก่อนเลือกอุปกรณ์ควบคุมที่ต้องการใช้
-                        </p>
-
-                        <ul>
-                            <li>ตรวจแรงดันน้ำและความเหมาะสมของหัวจ่ายน้ำ</li>
-                            <li>ตรวจจุดรั่วและการอุดตันของระบบเป็นประจำ</li>
-                            <li>ปรับการให้น้ำตามฝนและความชื้นในแปลงจริง</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </details>
-
-        </div>
-
+      <div class="page-heading">
+        <h1>เทคโนโลยีการเกษตร</h1>
+
+        <p>
+          เรียนรู้เทคโนโลยีและนวัตกรรมเพื่อการเกษตร
+          เลือกหัวข้อเพื่ออ่านรายละเอียด
+        </p>
+      </div>
+
+      <div class="technology-list">
+        <!-- 01 โดรนการเกษตร -->
+        <details class="technology-item">
+          <summary class="technology-header">
+            <span class="item-number">01</span>
+
+            <span class="item-title">โดรนการเกษตร</span>
+
+            <span class="item-description"> สำรวจแปลงและดูแลพืชจากมุมสูง </span>
+
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+
+          <div class="technology-content">
+            <div class="technology-card">
+              <img src="img/โดรนการเกษตร.webp" alt="โดรนที่ใช้ในงานเกษตร" />
+
+              <div class="technology-text">
+                <span class="topic-badge">สำรวจพื้นที่</span>
+
+                <h2>สำรวจแปลงและดูแลพืชจากมุมสูง</h2>
+
+                <p>
+                  โดรนช่วยถ่ายภาพและสำรวจแปลงจากมุมสูง ทำให้เห็นภาพรวมของพื้นที่
+                  และจุดที่ควรลงไปตรวจสอบเพิ่มเติม
+                  ความสามารถขึ้นอยู่กับชนิดของโดรน และอุปกรณ์ที่ติดตั้ง
+                </p>
+              </div>
+            </div>
+
+            <div class="more-content">
+              <h3>เริ่มต้นอย่างไร?</h3>
+
+              <p>
+                กำหนดก่อนว่าต้องการใช้โดรนทำอะไร เช่น
+                สำรวจพื้นที่หรือบันทึกภาพการเติบโต
+                แล้วเลือกอุปกรณ์ให้เหมาะกับงาน
+              </p>
+
+              <ul>
+                <li>สำรวจขนาดพื้นที่และสิ่งกีดขวางในแปลง</li>
+                <li>ศึกษาวิธีใช้งานและข้อกำหนดที่เกี่ยวข้องก่อนบิน</li>
+                <li>นำภาพที่ได้มาตรวจสอบร่วมกับสภาพจริงในแปลง</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- 02 Smart Farming -->
+        <details class="technology-item">
+          <summary class="technology-header">
+            <span class="item-number">02</span>
+
+            <span class="item-title">Smart Farming</span>
+
+            <span class="item-description"> วางแผนฟาร์มด้วยข้อมูล </span>
+
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+
+          <div class="technology-content">
+            <div class="technology-card">
+              <img
+                src="img/smart-farm.webp"
+                alt="การใช้เทคโนโลยีติดตามข้อมูลในฟาร์ม"
+                loading="lazy"
+              />
+
+              <div class="technology-text">
+                <span class="topic-badge">ฟาร์มอัจฉริยะ</span>
+
+                <h2>ใช้ข้อมูลช่วยตัดสินใจดูแลฟาร์ม</h2>
+
+                <p>
+                  Smart Farming คือการนำข้อมูลและเทคโนโลยี มาช่วยจัดการงานเกษตร
+                  เช่น บันทึกการให้น้ำ ติดตามสภาพแปลง และวางแผนการดูแลพืช
+                  สามารถเริ่มจากเครื่องมือง่าย ๆ ที่เหมาะกับขนาดฟาร์ม
+                </p>
+              </div>
+            </div>
+
+            <div class="more-content">
+              <h3>เริ่มจากปัญหาที่อยากแก้</h3>
+
+              <p>
+                เลือกงานที่ต้องการปรับปรุงก่อน แล้วค่อยหาเครื่องมือมาช่วย
+                ไม่จำเป็นต้องติดตั้งระบบทั้งหมดพร้อมกัน
+              </p>
+
+              <ul>
+                <li>บันทึกวันปลูก การให้น้ำ และค่าใช้จ่าย</li>
+                <li>เปรียบเทียบข้อมูลระหว่างรอบการปลูก</li>
+                <li>ทดลองระบบในพื้นที่เล็กก่อนขยายใช้งาน</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- 03 IoT & Sensor -->
+        <details class="technology-item">
+          <summary class="technology-header">
+            <span class="item-number">03</span>
+
+            <span class="item-title">IoT &amp; Sensor</span>
+
+            <span class="item-description"> ตรวจวัดและติดตามแปลงปลูก </span>
+
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+
+          <div class="technology-content">
+            <div class="technology-card">
+              <img
+                src="img/IoT.jpg"
+                alt="อุปกรณ์เซนเซอร์ตรวจวัดข้อมูลในพื้นที่เกษตร"
+                loading="lazy"
+              />
+
+              <div class="technology-text">
+                <span class="topic-badge">ตรวจวัดสภาพแปลง</span>
+
+                <h2>ติดตามข้อมูลจากอุปกรณ์ในพื้นที่</h2>
+
+                <p>
+                  เซนเซอร์ใช้ตรวจวัดค่าต่าง ๆ เช่น ความชื้นดิน อุณหภูมิ
+                  และความชื้นอากาศ เมื่อนำมาเชื่อมต่อกับระบบ IoT
+                  ก็สามารถส่งข้อมูลไปแสดงบนอุปกรณ์อื่น เพื่อช่วยติดตามสภาพแปลง
+                </p>
+              </div>
+            </div>
+
+            <div class="more-content">
+              <h3>ติดตั้งอย่างไรให้ข้อมูลมีประโยชน์?</h3>
+
+              <p>
+                เลือกเซนเซอร์ให้ตรงกับสิ่งที่ต้องการวัด
+                และติดตั้งในตำแหน่งที่สะท้อนสภาพพื้นที่จริง
+              </p>
+
+              <ul>
+                <li>ตรวจแหล่งจ่ายไฟและสัญญาณสื่อสารในแปลง</li>
+                <li>ติดตั้งและตรวจสอบอุปกรณ์ตามคู่มือผู้ผลิต</li>
+                <li>เปรียบเทียบค่าที่วัดได้กับการสำรวจแปลงจริง</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- 04 AI / Big Data -->
+        <details class="technology-item">
+          <summary class="technology-header">
+            <span class="item-number">04</span>
+
+            <span class="item-title">AI / Big Data</span>
+
+            <span class="item-description"> วิเคราะห์ข้อมูลเพื่อการเกษตร </span>
+
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+
+          <div class="technology-content">
+            <div class="technology-card">
+              <img
+                src="img/Ai-Bigdata.jpeg"
+                alt="การใช้ข้อมูลประกอบการวางแผนเกษตร"
+                loading="lazy"
+              />
+
+              <div class="technology-text">
+                <span class="topic-badge">วิเคราะห์ข้อมูล</span>
+
+                <h2>มองหาแนวโน้มจากข้อมูลในฟาร์ม</h2>
+
+                <p>
+                  การวิเคราะห์ข้อมูลช่วยเปรียบเทียบผลผลิต สภาพอากาศ
+                  และการดูแลในแต่ละช่วงเวลา ส่วน AI
+                  สามารถช่วยค้นหารูปแบบจากข้อมูล เพื่อนำไปประกอบการตัดสินใจ
+                  โดยผลลัพธ์ขึ้นอยู่กับคุณภาพของข้อมูลที่ใช้
+                </p>
+              </div>
+            </div>
+
+            <div class="more-content">
+              <h3>เตรียมข้อมูลก่อนเริ่มใช้งาน</h3>
+
+              <p>
+                เริ่มจากบันทึกข้อมูลให้สม่ำเสมอ และใช้หน่วยวัดเดียวกัน
+                เพื่อให้เปรียบเทียบข้อมูลได้ง่าย
+              </p>
+
+              <ul>
+                <li>ระบุวันที่ พื้นที่ปลูก และชนิดพืชให้ชัดเจน</li>
+                <li>ตรวจข้อมูลที่ขาดหายหรือกรอกผิดก่อนวิเคราะห์</li>
+                <li>ใช้ผลวิเคราะห์ร่วมกับประสบการณ์และข้อมูลหน้างาน</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- 05 เครื่องจักรกล -->
+        <details class="technology-item">
+          <summary class="technology-header">
+            <span class="item-number">05</span>
+
+            <span class="item-title">เครื่องจักรกล</span>
+
+            <span class="item-description"> ช่วยทุ่นแรงในการทำงาน </span>
+
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+
+          <div class="technology-content">
+            <div class="technology-card">
+              <img
+                src="img/เครื่องจักรการเกษตร.jpeg"
+                alt="เครื่องจักรกลที่ใช้ในงานเกษตร"
+                loading="lazy"
+              />
+
+              <div class="technology-text">
+                <span class="topic-badge">อุปกรณ์การเกษตร</span>
+
+                <h2>เลือกเครื่องมือให้เหมาะกับงานและพื้นที่</h2>
+
+                <p>
+                  เครื่องจักรช่วยงานเตรียมดิน ปลูก ดูแลแปลง หรือเก็บเกี่ยว
+                  การเลือกใช้งานควรพิจารณาขนาดพื้นที่ ลักษณะงาน
+                  และความสะดวกในการดูแลรักษา
+                </p>
+              </div>
+            </div>
+
+            <div class="more-content">
+              <h3>พิจารณาอะไรบ้างก่อนเลือกใช้?</h3>
+
+              <p>
+                เปรียบเทียบการซื้อ การเช่า
+                หรือการจ้างบริการให้เหมาะกับความถี่ในการใช้งาน
+              </p>
+
+              <ul>
+                <li>เลือกขนาดเครื่องให้เหมาะกับแปลงและทางเข้าออก</li>
+                <li>นับค่าเชื้อเพลิง ค่าซ่อม และค่าบำรุงรักษาร่วมด้วย</li>
+                <li>ศึกษาคู่มือและใช้งานตามข้อกำหนดด้านความปลอดภัย</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- 06 ระบบน้ำอัจฉริยะ -->
+        <details class="technology-item">
+          <summary class="technology-header">
+            <span class="item-number">06</span>
+
+            <span class="item-title">ระบบน้ำอัจฉริยะ</span>
+
+            <span class="item-description"> ควบคุมการให้น้ำอย่างเหมาะสม </span>
+
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </summary>
+
+          <div class="technology-content">
+            <div class="technology-card">
+              <img
+                src="img/ระบบน้ำอัจฉริยะ.png"
+                alt="ระบบให้น้ำในแปลงเพาะปลูก"
+                loading="lazy"
+              />
+
+              <div class="technology-text">
+                <span class="topic-badge">จัดการน้ำ</span>
+
+                <h2>วางแผนให้น้ำจากสภาพแปลง</h2>
+
+                <p>
+                  ระบบน้ำอัจฉริยะช่วยควบคุมการให้น้ำ
+                  ตามเวลาหรือข้อมูลจากเซนเซอร์ โดยต้องตั้งค่าให้เหมาะกับชนิดพืช
+                  สภาพดิน และช่วงการเจริญเติบโต
+                </p>
+              </div>
+            </div>
+
+            <div class="more-content">
+              <h3>เริ่มต้นวางระบบอย่างไร?</h3>
+
+              <p>
+                สำรวจแหล่งน้ำและแบ่งพื้นที่ให้น้ำให้เหมาะสม
+                ก่อนเลือกอุปกรณ์ควบคุมที่ต้องการใช้
+              </p>
+
+              <ul>
+                <li>ตรวจแรงดันน้ำและความเหมาะสมของหัวจ่ายน้ำ</li>
+                <li>ตรวจจุดรั่วและการอุดตันของระบบเป็นประจำ</li>
+                <li>ปรับการให้น้ำตามฝนและความชื้นในแปลงจริง</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
     </main>
 
-
     <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">
+              <img src="img/icon.png" alt="icon" />
+            </span>
 
-        <div class="footer-top">
-
-            <div class="footer-about">
-
-                <div class="footer-logo">
-
-                    <span class="footer-logo-icon">
-                        <img src="img/icon.png" alt="icon">
-                    </span>
-
-                    <div>
-                        <strong>Agricultural</strong>
-                        <small>Knowledge</small>
-                    </div>
-
-                </div>
-
-                <p>
-                    แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
-                </p>
-
+            <div>
+              <strong>Agricultural</strong>
+              <small>Knowledge</small>
             </div>
+          </div>
 
-
-            <div class="footer-column">
-
-                <h3>เมนูหลัก</h3>
-
-                <ul>
-                    <li><a href="home.html">หน้าหลัก</a></li>
-                    <li><a href="knowledge.html">ความรู้</a></li>
-                    <li><a href="tools.html">เครื่องมือ</a></li>
-                    <li><a href="quiz.html">แบบทดสอบ</a></li>
-                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
-                </ul>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>ความรู้</h3>
-
-                <ul>
-                    <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
-                    <li><a href="water.html">การจัดการน้ำ</a></li>
-                    <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
-                    <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
-                    <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
-                </ul>
-
-            </div>
-
-
-            <div class="footer-contact">
-
-                <h3>ติดต่อเรา</h3>
-
-                <p>
-                    ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ เพื่อยกระดับคุณภาพชีวิตเกษตรกร
-                </p>
-
-                <div class="footer-social">
-                    <a href="#" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                    <a href="#" class="social-line" aria-label="LINE">
-                        <i class="fa-brands fa-line"></i>
-                    </a>
-
-                    <a href="#" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-
-            </div>
-
+          <p>
+            แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร
+            สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
+          </p>
         </div>
 
+        <div class="footer-column">
+          <h3>เมนูหลัก</h3>
 
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 Agricultural Knowledge Platform. All rights reserved.
-            </p>
-
-            <div class="footer-policy">
-                <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
-                <span>·</span>
-                <a href="terms.html">ข้อกำหนดการใช้งาน</a>
-            </div>
-
+          <ul>
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="knowledge.html">ความรู้</a></li>
+            <li><a href="tools.html">เครื่องมือ</a></li>
+            <li><a href="quiz.html">แบบทดสอบ</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          </ul>
         </div>
 
+        <div class="footer-column">
+          <h3>ความรู้</h3>
+
+          <ul>
+            <li><a href="modern-farming.html">เกษตรยุคใหม่</a></li>
+            <li><a href="water.html">การจัดการน้ำ</a></li>
+            <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+            <li><a href="sufficiency.html">3 ห่วง 2 เงื่อนไข</a></li>
+            <li><a href="crops.html">พืชเศรษฐกิจ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>ติดต่อเรา</h3>
+
+          <p>
+            ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ
+            เพื่อยกระดับคุณภาพชีวิตเกษตรกร
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#" class="social-line" aria-label="LINE">
+              <i class="fa-brands fa-line"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
+
+        <div class="footer-policy">
+          <a href="privacy.html">นโยบายความเป็นส่วนตัว</a>
+          <span>·</span>
+          <a href="terms.html">ข้อกำหนดการใช้งาน</a>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
