@@ -453,9 +453,6 @@ input[type="radio"][name="veg-tab"] {
 }
 
 /* sections */
-.tips-section {
-  margin-top: 0;
-}
 
 .section-title {
   display: flex;
@@ -475,7 +472,6 @@ input[type="radio"][name="veg-tab"] {
   border-radius: 4px;
 }
 
-/* แก้ไข: กำหนด line-height ให้ตายตัว (13px x 1.5 = 19.5px) เพื่อให้คำนวณความสูงตรงกับ sidebar-title */
 .plant-card-desc {
   margin-bottom: 20px;
   color: #6b7280;
@@ -483,49 +479,65 @@ input[type="radio"][name="veg-tab"] {
   line-height: 1.5;
 }
 
-/* tips */
-.tips-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+.veg-system input[type="radio"][name="veg-tab"] {
+  display: none;
 }
 
-.tip-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
-  padding: 28px 18px;
-  background: #fff;
-  border: 1px solid #f0f4f1;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  text-align: center;
+.veg-system .preview-card {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
 }
 
-.tip-icon-box {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.veg-system .veg-info {
+  display: none;
+}
+
+#tab-kale:checked ~ .hero-section-grid .preview-kale,
+#tab-cabbage:checked ~ .hero-section-grid .preview-cabbage,
+#tab-morning-glory:checked ~ .hero-section-grid .preview-morning-glory,
+#tab-choy-sum:checked ~ .hero-section-grid .preview-choy-sum {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#tab-kale:checked ~ .hero-section-grid .info-kale,
+#tab-cabbage:checked ~ .hero-section-grid .info-cabbage,
+#tab-morning-glory:checked ~ .hero-section-grid .info-morning-glory,
+#tab-choy-sum:checked ~ .hero-section-grid .info-choy-sum {
+  display: block;
+}
+
+#tab-kale:checked ~ .hero-section-grid .label-kale,
+#tab-cabbage:checked ~ .hero-section-grid .label-cabbage,
+#tab-morning-glory:checked ~ .hero-section-grid .label-morning-glory,
+#tab-choy-sum:checked ~ .hero-section-grid .label-choy-sum {
+  border-color: #16a34a;
   background: #f0fdf4;
-  color: #16a34a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+  box-shadow: 0 3px 8px rgba(22, 163, 74, 0.12);
 }
 
-.tip-label {
-  color: #14532d;
-  font-size: 14px;
-  font-weight: 700;
+.veg-system .veg-item {
+  border: 1px solid transparent;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
-.tip-desc {
-  color: #65716c;
-  font-size: 12.5px;
-  line-height: 1.7;
+.veg-system .veg-item:focus-within,
+.veg-system .veg-item:hover {
+  border-color: #86efac;
+}
+
+.veg-system .preview-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* footer */
@@ -964,6 +976,18 @@ input[type="radio"][name="veg-tab"] {
     width: 100%;
     padding: 35px 5% 20px;
     font-size: 12px;
+  }
+
+  .veg-system .hero-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .veg-system .image-preview-wrapper {
+    height: 280px;
+  }
+
+  .veg-system .info-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .footer-top {

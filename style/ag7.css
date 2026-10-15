@@ -282,10 +282,30 @@ input[type="radio"][name="plant-tab"] {
   font-size: 16px;
 }
 
-#tab-corn:checked ~ .tabs-wrapper .label-corn {
+.tab-panels {
+  width: 100%;
+}
+
+.panel {
+  display: none;
+}
+
+#tab-corn:checked ~ .tab-panels .panel-corn,
+#tab-cassava:checked ~ .tab-panels .panel-cassava,
+#tab-sugarcane:checked ~ .tab-panels .panel-sugarcane,
+#tab-sunflower:checked ~ .tab-panels .panel-sunflower,
+#tab-soybean:checked ~ .tab-panels .panel-soybean {
+  display: block;
+}
+
+#tab-corn:checked ~ .tabs-wrapper .label-corn,
+#tab-cassava:checked ~ .tabs-wrapper .label-cassava,
+#tab-sugarcane:checked ~ .tabs-wrapper .label-sugarcane,
+#tab-sunflower:checked ~ .tabs-wrapper .label-sunflower,
+#tab-soybean:checked ~ .tabs-wrapper .label-soybean {
   background: #064e3b;
   border-color: #194028;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 0 4px 12px rgba(25, 64, 40, 0.2);
 }
 

@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agricultural Knowledge</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-
     <link rel="stylesheet" href="style/ag4.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="logo">
@@ -26,7 +23,6 @@
       </div>
 
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
       <label for="menu-toggle" class="hamburger">
         <span></span>
         <span></span>
@@ -43,9 +39,9 @@
 
           <div class="menu-level1" id="knowledge">
             <div class="menu-item-has-children">
-              <a href="#beginner">
-                มือใหม่ <i class="fa-solid fa-caret-right"></i>
-              </a>
+              <a href="#beginner"
+                >มือใหม่ <i class="fa-solid fa-caret-right"></i
+              ></a>
               <div class="menu-level2" id="beginner">
                 <a href="ag4.html">เกษตรสมัยใหม่</a>
                 <a href="ag5.html">ปลูกข้าว</a>
@@ -60,9 +56,9 @@
             </div>
 
             <div class="menu-item-has-children">
-              <a href="#advanced">
-                ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i>
-              </a>
+              <a href="#advanced"
+                >ผู้มีพื้นฐาน <i class="fa-solid fa-caret-right"></i
+              ></a>
               <div class="menu-level2" id="advanced">
                 <a href="ag13.html">เทคโนโลยีการเกษตร</a>
                 <a href="ag15.html">การวางแผนการผลิต</a>
@@ -123,52 +119,137 @@
         </div>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-image">
-          <img src="img/do.png" alt="เทคโนโลยีโดรนในเกษตร" />
-        </div>
+      <div class="feature-slider">
+        <input type="radio" name="feature-slide" id="slide-1" checked />
+        <input type="radio" name="feature-slide" id="slide-2" />
+        <input type="radio" name="feature-slide" id="slide-3" />
 
-        <div class="feature-content">
-          <div class="tag">
-            <span class="dot"></span>
-            นวัตกรรมการทำเกษตรแม่นยำ
+        <div class="feature-card feature-one">
+          <div class="feature-image">
+            <img src="img/do.png" alt="เทคโนโลยีโดรนในเกษตร" />
           </div>
-
-          <h2 class="feature-title">เทคโนโลยีโดรนในเกษตร</h2>
-
-          <p class="feature-desc">
-            การประยุกต์ใช้เทคโนโลยีการบินไร้คนขับหรือโดรน
-            ช่วยยกระดับประสิทธิภาพการทำการเกษตรอย่างแม่นยำ
-            ทั้งการฉีดพ่นปุ๋ยชีวภาพและสารควบคุมศัตรูพืช
-            การสำรวจสุขภาพและความอุดมสมบูรณ์ของพื้นผล
-            ตลอดจนการวิเคราะห์สภาพดินเพื่อการตัดสินใจที่คุ้มค่าสูงสุด
-          </p>
-
-          <div class="nav-buttons" aria-hidden="true">
-            <span class="nav-btn prev">
-              <i class="fa-solid fa-arrow-left"></i>
-            </span>
-            <span class="nav-btn next">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
+          <div class="feature-content">
+            <div class="tag">
+              <span class="dot"></span>นวัตกรรมการทำเกษตรแม่นยำ
+            </div>
+            <h2 class="feature-title">เทคโนโลยีโดรนในเกษตร</h2>
+            <p class="feature-desc">
+              การประยุกต์ใช้เทคโนโลยีการบินไร้คนขับหรือโดรน
+              ช่วยยกระดับประสิทธิภาพการทำการเกษตรอย่างแม่นยำ
+              ทั้งการฉีดพ่นปุ๋ยชีวภาพและสารควบคุมศัตรูพืช
+              การสำรวจสุขภาพและความอุดมสมบูรณ์ของพื้นที่
+              ตลอดจนการวิเคราะห์ข้อมูลเพื่อการตัดสินใจที่คุ้มค่า
+            </p>
+            <div class="nav-buttons">
+              <label for="slide-3" class="nav-btn prev"
+                ><i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+                ><span class="sr-only">เนื้อหาก่อนหน้า</span></label
+              >
+              <label for="slide-2" class="nav-btn next"
+                ><i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ><span class="sr-only">เนื้อหาถัดไป</span></label
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="stats-grid">
-        <div class="stat-card">
-          <p class="stat-label">ลดต้นทุน</p>
-          <p class="stat-value text-green">-35%</p>
+        <div class="feature-card feature-two">
+          <div class="feature-image">
+            <img src="img/spring.png" alt="ระบบน้ำอัจฉริยะ" />
+          </div>
+          <div class="feature-content">
+            <div class="tag">
+              <span class="dot"></span>เทคโนโลยีการจัดการน้ำ
+            </div>
+            <h2 class="feature-title">ระบบน้ำอัจฉริยะ</h2>
+            <p class="feature-desc">
+              ระบบให้น้ำอัจฉริยะใช้เซนเซอร์ตรวจวัดความชื้นในดินและข้อมูลสภาพแวดล้อม
+              เพื่อควบคุมการให้น้ำตามความต้องการของพืช ช่วยลดการใช้น้ำ ลดแรงงาน
+              และเพิ่มประสิทธิภาพในการดูแลแปลงเกษตร
+            </p>
+            <div class="nav-buttons">
+              <label for="slide-1" class="nav-btn prev"
+                ><i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+                ><span class="sr-only">เนื้อหาก่อนหน้า</span></label
+              >
+              <label for="slide-3" class="nav-btn next"
+                ><i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ><span class="sr-only">เนื้อหาถัดไป</span></label
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="stat-card">
-          <p class="stat-label">เพิ่มผลผลิต</p>
-          <p class="stat-value text-green">+24%</p>
+        <div class="feature-card feature-three">
+          <div class="feature-image">
+            <img src="img/ana.png" alt="การเกษตรด้วยปัญญาประดิษฐ์" />
+          </div>
+          <div class="feature-content">
+            <div class="tag">
+              <span class="dot"></span>เกษตรแม่นยำด้วยข้อมูล
+            </div>
+            <h2 class="feature-title">การเกษตรด้วย AI</h2>
+            <p class="feature-desc">
+              การนำปัญญาประดิษฐ์มาวิเคราะห์ข้อมูลสภาพดิน สภาพอากาศ และสุขภาพพืช
+              ช่วยให้เกษตรกรวางแผนการเพาะปลูก ตรวจพบความผิดปกติได้เร็วขึ้น
+              และเลือกวิธีจัดการแปลงเกษตรได้เหมาะสมกับสถานการณ์
+            </p>
+            <div class="nav-buttons">
+              <label for="slide-2" class="nav-btn prev"
+                ><i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+                ><span class="sr-only">เนื้อหาก่อนหน้า</span></label
+              >
+              <label for="slide-1" class="nav-btn next"
+                ><i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+                ><span class="sr-only">เนื้อหาถัดไป</span></label
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="stat-card">
-          <p class="stat-label">ลดการใช้น้ำ</p>
-          <p class="stat-value text-green">-40%</p>
+        <div class="stats-grid stats-one">
+          <div class="stat-card">
+            <p class="stat-label">ลดต้นทุน</p>
+            <p class="stat-value text-green">-35%</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">เพิ่มผลผลิต</p>
+            <p class="stat-value text-green">+24%</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">ลดการใช้น้ำ</p>
+            <p class="stat-value text-green">-40%</p>
+          </div>
+        </div>
+
+        <div class="stats-grid stats-two">
+          <div class="stat-card">
+            <p class="stat-label">ลดการใช้น้ำ</p>
+            <p class="stat-value text-green">-30%</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">ลดแรงงาน</p>
+            <p class="stat-value text-green">-25%</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">เพิ่มประสิทธิภาพ</p>
+            <p class="stat-value text-green">+20%</p>
+          </div>
+        </div>
+
+        <div class="stats-grid stats-three">
+          <div class="stat-card">
+            <p class="stat-label">วิเคราะห์ข้อมูล</p>
+            <p class="stat-value text-green">AI</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">ติดตามสุขภาพพืช</p>
+            <p class="stat-value text-green">Real-time</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">วางแผนเพาะปลูก</p>
+            <p class="stat-value text-green">Smart</p>
+          </div>
         </div>
       </div>
     </main>
@@ -177,16 +258,14 @@
       <div class="footer-top">
         <div class="footer-about">
           <div class="footer-logo">
-            <span class="footer-logo-icon">
-              <img src="img/icon.png" alt="Agricultural Knowledge icon" />
-            </span>
-
+            <span class="footer-logo-icon"
+              ><img src="img/icon.png" alt="Agricultural Knowledge icon"
+            /></span>
             <div>
               <strong>Agricultural</strong>
               <small>Knowledge</small>
             </div>
           </div>
-
           <p>
             แพลตฟอร์มการเรียนรู้และคลังความรู้เพื่อการเรียนรู้ด้านการเกษตร
             สนับสนุนเกษตรกรไทยด้วยเทคโนโลยีและองค์ความรู้ที่ยั่งยืน
@@ -195,23 +274,21 @@
 
         <div class="footer-column">
           <h3>เมนูหลัก</h3>
-
           <ul>
             <li><a href="index.html">หน้าหลัก</a></li>
             <li><a href="ag5.html">ความรู้</a></li>
-            <li><a href="tools.html">เครื่องมือ</a></li>
-            <li><a href="quiz.html">แบบทดสอบ</a></li>
+            <li><a href="ag19.html">เครื่องมือ</a></li>
+            <li><a href="ag20.html">แบบทดสอบ</a></li>
             <li><a href="ag2.html">เกี่ยวกับเรา</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
           <h3>ความรู้</h3>
-
           <ul>
             <li><a href="ag4.html">เกษตรยุคใหม่</a></li>
             <li><a href="ag10.html">การจัดการน้ำ</a></li>
-            <li><a href="drone.html">เทคโนโลยีโดรน</a></li>
+            <li><a href="ag13.html">เทคโนโลยีการเกษตร</a></li>
             <li><a href="ag3.html">3 ห่วง 2 เงื่อนไข</a></li>
             <li><a href="ag7.html">พืชเศรษฐกิจ</a></li>
           </ul>
@@ -219,29 +296,26 @@
 
         <div class="footer-contact">
           <h3>ติดต่อเรา</h3>
-
           <p>
             ส่งเสริมการเกษตรและเครือข่ายความร่วมมืออัจฉริยะ
             เพื่อยกระดับคุณภาพชีวิตเกษตรกร
           </p>
-
           <div class="footer-social">
-            <a href="https://www.facebook.com/" aria-label="Facebook">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://line.me/" class="social-line" aria-label="LINE">
-              <i class="fa-brands fa-line"></i>
-            </a>
-            <a href="https://www.youtube.com/" aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://line.me/" aria-label="LINE"
+              ><i class="fa-brands fa-line"></i
+            ></a>
+            <a href="https://www.youtube.com/" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>© 2026 Agricultural Knowledge Platform. All rights reserved.</p>
-
         <div class="footer-policy">
           <a href="#privacy">นโยบายความเป็นส่วนตัว</a>
           <span>·</span>
