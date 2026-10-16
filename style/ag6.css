@@ -47,9 +47,7 @@ body {
 .logo-icon img {
   width: 35px;
   height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .brand-text {
@@ -213,7 +211,12 @@ body {
 }
 
 .section-header {
-  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .main-title {
@@ -228,6 +231,31 @@ body {
   font-size: 15px;
 }
 
+/* header badge */
+.header-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #ecfdf5;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.status-text {
+  color: #059669;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+/* cards */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -235,6 +263,7 @@ body {
 }
 
 .plant-card {
+  position: relative;
   background: #fff;
   border: 1px solid #e6eee8;
   border-radius: 16px;
@@ -315,10 +344,7 @@ body {
   background: #2b784b;
 }
 
-.plant-card {
-  position: relative;
-}
-
+/* difficulty badge on cards */
 .status-badge {
   position: absolute;
   top: 198px;
@@ -344,6 +370,7 @@ body {
   color: #4d7c0f;
 }
 
+/* modal */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -519,9 +546,7 @@ body {
 .footer-logo-icon img {
   width: 26px;
   height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .footer-logo strong,
@@ -695,7 +720,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     font-size: 14px;
   }
 
@@ -726,11 +750,6 @@ body {
   .menu-level2 {
     background: #fff;
     border-left: 3px solid #28a745;
-  }
-
-  .dropdown-hover:hover > .menu-level1,
-  .menu-item-has-children:hover > .menu-level2 {
-    display: block;
   }
 
   .menu-level1 a,
@@ -800,6 +819,11 @@ body {
     font-size: 13px;
   }
 
+  .status-badge {
+    top: 216px;
+    right: 16px;
+  }
+
   .modal-overlay {
     padding: 15px;
   }
@@ -857,11 +881,6 @@ body {
   .modal-desc-box p {
     font-size: 12.5px;
     line-height: 1.7;
-  }
-
-  .status-badge {
-    top: 216px;
-    right: 16px;
   }
 
   .site-footer {

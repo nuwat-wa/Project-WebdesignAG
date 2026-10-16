@@ -313,9 +313,6 @@ input[type="radio"][name="veg-tab"] {
   line-height: 1.4;
 }
 
-/* vegetable list */
-/* แก้ไข: ความสูงรวมของหัวข้อฝั่งขวา = main-title (44) + margin (7) + plant-card-desc (19.5) + margin (20) = 90.5px
-   ทำให้กล่องผักใบแรกเริ่มที่ระดับเดียวกับขอบบนของรูปใหญ่ */
 .sidebar-title {
   height: 90.5px;
   margin-bottom: 0;
@@ -684,7 +681,35 @@ input[type="radio"][name="veg-tab"] {
 }
 
 .veg-name {
-  font-size: 17px;
+  font-size: 14px;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-left: auto;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  background: #ecfdf5;
+  border-radius: 20px;
+  white-space: nowrap;
+  position: static;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.status-text {
+  color: #059669;
+  font-size: 11.5px;
+  font-weight: 600;
 }
 
 /* responsive */
@@ -1064,8 +1089,13 @@ input[type="radio"][name="veg-tab"] {
   }
 
   .plant-card-desc {
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     font-size: 13px;
     line-height: 1.6;
+  }
+
+  .status-badge {
+    margin: 0 0 18px 0;
+    align-self: flex-start;
   }
 }

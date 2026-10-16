@@ -339,7 +339,11 @@ body {
 }
 
 .section-header {
-  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .section-title {
@@ -553,6 +557,31 @@ body {
   border-radius: 12px;
   text-decoration: none;
   font-size: 14px;
+  font-weight: 600;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-left: auto;
+  padding: 6px 14px;
+  background: #ecfdf5;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.status-text {
+  color: #059669;
+  font-size: 11.5px;
   font-weight: 600;
 }
 
@@ -972,7 +1001,7 @@ body {
     gap: 10px;
   }
 
-    .card-link {
+  .card-link {
     padding: 7px 14px;
     font-size: 12px;
   }
