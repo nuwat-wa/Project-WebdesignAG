@@ -326,7 +326,7 @@ h1 {
 
 .site-footer {
     padding: 50px 4% 25px;
-    background-color: #193f31;
+    background-color: #0a624a;
     color: #a4bdb0;
     font-family: Tahoma, sans-serif;
     font-size: 14px;
@@ -351,8 +351,6 @@ h1 {
     outline-offset: 4px;
 }
 
-
-/* จัดเนื้อหา 4 คอลัมน์ */
 
 .site-footer .footer-top {
     display: flex;

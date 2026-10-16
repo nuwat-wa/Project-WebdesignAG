@@ -431,7 +431,7 @@ body {
 .site-footer {
   width: 100%;
   padding: 50px 5% 25px;
-  background: #064e3b;
+  background: #0a624a;
   color: #a4bdb0;
   font-size: 14px;
   line-height: 1.7;
@@ -881,5 +881,21 @@ body {
     margin-bottom: 18px;
     font-size: 13px;
     line-height: 1.6;
+  }
+
+  .status-badge {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+  }
+
+  .status-badge {
+    margin: 0 auto 20px;
   }
 }

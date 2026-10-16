@@ -331,7 +331,7 @@ body {
   width: 100%;
   margin-top: auto;
   padding: 9px;
-  background: #064e3b;
+  background: #0a624a;
   color: #fff;
   border-radius: 8px;
   display: block;
@@ -341,7 +341,7 @@ body {
 }
 
 .btn-detail:hover {
-  background: #2b784b;
+  background: #0d7d5f;
 }
 
 /* difficulty badge on cards */
@@ -514,7 +514,7 @@ body {
 .site-footer {
   width: 100%;
   padding: 50px 5% 25px;
-  background: #064e3b;
+  background: #0a624a;
   color: #a4bdb0;
 }
 
@@ -947,5 +947,17 @@ body {
   .footer-policy {
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .header-badge {
+    margin: 0;
   }
 }

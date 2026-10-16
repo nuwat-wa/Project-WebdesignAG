@@ -208,7 +208,7 @@ body {
   height: 480px;
   overflow: hidden;
   border-radius: 0 0 45px 45px;
-  background: #0d2818;
+  background: #0a624a;
 }
 
 .hero-banner-bg img {
@@ -501,10 +501,10 @@ body {
   gap: 6px;
   padding: 8px 18px;
   color: #fff;
-  background: #064e3b;
+  background: #0a624a;
   border-radius: 10px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   text-decoration: none;
   white-space: nowrap;
   transition: 0.25s;
@@ -525,7 +525,7 @@ body {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  background: #064e3b;
+  background: #0a624a;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(6, 78, 59, 0.15);
 }
@@ -558,6 +558,11 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+}
+
+.btn-read-banner:hover {
+  background: #c6fdee;
+  color: #0a624a;
 }
 
 .status-badge {
