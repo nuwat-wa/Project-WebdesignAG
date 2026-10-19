@@ -498,8 +498,6 @@ body {
 }
 
 
-/* เปิดและปิดอย่างนุ่มนวลในเบราว์เซอร์ที่รองรับ */
-
 @supports (interpolate-size: allow-keywords) and selector(::details-content) {
     .technology-item {
         interpolate-size: allow-keywords;

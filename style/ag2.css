@@ -92,58 +92,58 @@ body {
 
 /* nav */
 .nav-links {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    align-items: center;
-    justify-content: end;
-    gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-content: end;
+  gap: 32px;
 }
 
 .nav-links > a,
 .dropdown-btn {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    margin: 0;
-    padding: 4px 0;
-    border: 0;
-    background: none;
-    color: #374151;
-    text-decoration: none;
-    font-family: "Kanit", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: color 0.2s;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 0;
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: #374151;
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 .nav-links > a::after,
 .dropdown-btn::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #196738;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.2s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #196738;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
 }
 
 .nav-links > a:hover,
 .nav-links > a.active,
 .dropdown-btn:hover {
-    color: #2d6a4f;
+  color: #2d6a4f;
 }
 
 .nav-links > a:hover::after,
 .nav-links > a.active::after,
 .dropdown-btn:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* dropdown */
@@ -435,6 +435,44 @@ body {
   line-height: 1.5;
 }
 
+.highlights-section {
+  position: relative;
+  margin-top: 20px;
+}
+
+.highlights-section .section-title {
+  margin-bottom: 24px;
+}
+
+.highlights-section .status-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin: 0;
+  padding: 6px 12px;
+  background: #ecfdf5;
+  border-radius: 20px;
+  float: none;
+}
+
+.highlights-section .status-dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.highlights-section .status-text {
+  color: #059669;
+  font-size: 11px;
+  font-weight: 600;
+}
+
 /* footer */
 .site-footer {
   width: 100%;
@@ -579,7 +617,6 @@ body {
 
 /* responsive */
 @media (max-width: 768px) {
-  
   .header {
     height: 60px;
     padding: 0 5%;
@@ -616,7 +653,7 @@ body {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-   .nav-links {
+  .nav-links {
     position: absolute;
     top: 60px;
     left: 0;
@@ -779,5 +816,20 @@ body {
 
   .footer-policy {
     flex-wrap: wrap;
+  }
+
+  .highlights-section .section-title {
+    margin-bottom: 20px;
+    font-size: 19px;
+  }
+
+  .highlights-section .status-badge {
+    position: static;
+    margin: 0 0 18px auto;
+    padding: 5px 10px;
+  }
+
+  .highlights-section .status-text {
+    font-size: 10px;
   }
 }

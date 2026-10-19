@@ -409,6 +409,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 3px;
   border-radius: 50%;
   background: #fff;
   color: #064e3b;
