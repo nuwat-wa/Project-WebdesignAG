@@ -341,7 +341,7 @@ body {
 #tab-yield:checked~.calculator-tabs .yield-tab,
 #tab-income:checked~.calculator-tabs .income-tab {
     border-color: #196738;
-    background-color: #064e3b;
+    background-color: #0a624a;
     color: white;
     box-shadow: 0 3px 6px rgba(25, 103, 56, 0.15);
 }

@@ -303,6 +303,24 @@ body {
   font-size: 12px;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1f2937;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.section-title::before {
+  content: "";
+  width: 5px;
+  height: 22px;
+  background: #10b981;
+  border-radius: 4px;
+}
+
 .status-badge {
   display: flex;
   align-items: center;

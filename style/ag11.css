@@ -456,7 +456,7 @@ main > h1,
   margin-top: auto;
   padding: 8px 24px;
   border-radius: 12px;
-  background-color: #064e3b;
+  background-color: #0a624a;
   color: white;
   text-align: center;
   font-size: 15px;
@@ -466,10 +466,9 @@ main > h1,
 }
 
 .cards .button:hover {
-  background-color: #104b29;
+  background-color: #084a38;
 }
 
-/* เลือกปุ่มด้วยคีย์บอร์ด */
 
 .cards .card:focus-within {
   border-color: #7bd6a5;

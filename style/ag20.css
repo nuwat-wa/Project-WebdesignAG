@@ -657,6 +657,14 @@ body {
   list-style: none;
 }
 
+.anser {
+  background: #0a624a !important;
+}
+
+.anser:hover {
+  background: #08523e !important;
+}
+
 .site-footer li {
   margin-bottom: 8px;
 }
